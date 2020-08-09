@@ -41,19 +41,16 @@ jobs:
             -i ./ci/netbox_swagger.json \
             -o ./master
 
-      - name: commit generated code
+      - name: commit and push generated code
         run: |
           cd ./master
           go mod tidy
-          git config --local user.email "${GITHUB_ACTOR}@github.com"
-          git config --local user.name "$GITHUB_ACTOR"
           git add .
-          git commit -m "code generation"
-          cd ..
-
-      - name: Push
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          directory: ./master
-
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "::debug::no changes to commit and push"
+          else
+            git config --local user.email "${GITHUB_ACTOR}@github.com"
+            git config --local user.name "$GITHUB_ACTOR"
+            git commit -m "code generation"
+            git push origin master
+          fi
