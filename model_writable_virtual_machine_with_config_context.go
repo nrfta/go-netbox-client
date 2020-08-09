@@ -32,7 +32,7 @@ type WritableVirtualMachineWithConfigContext struct {
 	LocalContextData string `json:"local_context_data,omitempty"`
 	Tags []string `json:"tags,omitempty"`
 	CustomFields *interface{} `json:"custom_fields,omitempty"`
-	ConfigContext map[string]string `json:"config_context,omitempty"`
+	ConfigContext *interface{} `json:"config_context,omitempty"`
 	Created string `json:"created,omitempty"`
 	LastUpdated time.Time `json:"last_updated,omitempty"`
 }

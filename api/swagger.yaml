@@ -28940,8 +28940,7 @@ definitions:
         type: "object"
         title: "Config context"
         readOnly: true
-        additionalProperties:
-          type: "string"
+        properties: {}
       created:
         type: "string"
         format: "date"
@@ -28958,8 +28957,7 @@ definitions:
         virtualmachine_count: 7
         id: 6
         url: "http://example.com/aeiou"
-      config_context:
-        key: "config_context"
+      config_context: "{}"
       primary_ip:
         address: "address"
         id: 1
@@ -29183,8 +29181,7 @@ definitions:
         type: "object"
         title: "Config context"
         readOnly: true
-        additionalProperties:
-          type: "string"
+        properties: {}
       created:
         type: "string"
         format: "date"
@@ -29197,8 +29194,7 @@ definitions:
         readOnly: true
     example:
       cluster: 4
-      config_context:
-        key: "config_context"
+      config_context: "{}"
       primary_ip: "primary_ip"
       vc_priority: 26
       device_type: 6
@@ -36155,8 +36151,7 @@ definitions:
         type: "object"
         title: "Config context"
         readOnly: true
-        additionalProperties:
-          type: "string"
+        properties: {}
       created:
         type: "string"
         format: "date"
@@ -36183,8 +36178,7 @@ definitions:
         device_count: 7
       memory: 1280358508
       comments: "comments"
-      config_context:
-        key: "config_context"
+      config_context: "{}"
       primary_ip:
         address: "address"
         id: 1
@@ -36324,8 +36318,7 @@ definitions:
         type: "object"
         title: "Config context"
         readOnly: true
-        additionalProperties:
-          type: "string"
+        properties: {}
       created:
         type: "string"
         format: "date"
@@ -36342,8 +36335,7 @@ definitions:
       role: 1
       memory: 776546568
       comments: "comments"
-      config_context:
-        key: "config_context"
+      config_context: "{}"
       primary_ip: "primary_ip"
       custom_fields: "{}"
       created: "2000-01-23"
@@ -37306,8 +37298,7 @@ definitions:
           virtualmachine_count: 7
           id: 6
           url: "http://example.com/aeiou"
-        config_context:
-          key: "config_context"
+        config_context: "{}"
         primary_ip:
           address: "address"
           id: 1
@@ -37407,8 +37398,7 @@ definitions:
           virtualmachine_count: 7
           id: 6
           url: "http://example.com/aeiou"
-        config_context:
-          key: "config_context"
+        config_context: "{}"
         primary_ip:
           address: "address"
           id: 1
@@ -40831,8 +40821,7 @@ definitions:
           device_count: 7
         memory: 1280358508
         comments: "comments"
-        config_context:
-          key: "config_context"
+        config_context: "{}"
         primary_ip:
           address: "address"
           id: 1
@@ -40893,8 +40882,7 @@ definitions:
           device_count: 7
         memory: 1280358508
         comments: "comments"
-        config_context:
-          key: "config_context"
+        config_context: "{}"
         primary_ip:
           address: "address"
           id: 1
