@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - ci
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: refs/heads/ci
+          path: $GITHUB_WORKSPACE/ci
+
+      - uses: actions/checkout@v2
+        with:
+          ref: refs/heads/master
+          path: $GITHUB_WORKSPACE/master
+
+      - name: Set up JDK 14
+        uses: actions/setup-java@v1
+        with:
+          java-version: 14
+
+      - name: download swagger-codegen-cli.jar
+        run: wget https://repo1.maven.org/maven2/io/swagger/swagger-codegen-cli/2.4.15/swagger-codegen-cli-2.4.15.jar -O $GITHUB_WORKSPACE/ci/swagger-codegen-cli.jar
+
+      - name: validate swagger file
+        run: java -jar $GITHUB_WORKSPACE/ci/swagger-codegen-cli.jar validate -i $GITHUB_WORKSPACE/ci/netbox_swagger.json
+
+      - name: Build
+        run: |
+          java -jar $GITHUB_WORKSPACE/ci/swagger-codegen-cli.jar generate -l go \
+            -c $GITHUB_WORKSPACE/ci/config.json \
+            -i $GITHUB_WORKSPACE/ci/netbox_swagger.json \
+            -o $GITHUB_WORKSPACE/master
+
+      - name: commit generated code
+        run: |
+          cd $GITHUB_WORKSPACE/master
+          git config --local user.email "${GITHUB_ACTOR}@github.com"
+          git config --local user.name "$GITHUB_ACTOR"
+          git add .
+          git commit -m "code generation"
+
+      - name: Push
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          directory: $GITHUB_WORKSPACE/master
+
