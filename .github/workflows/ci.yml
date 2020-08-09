@@ -44,6 +44,7 @@ jobs:
       - name: commit generated code
         run: |
           cd ./master
+          go mod tidy
           git config --local user.email "${GITHUB_ACTOR}@github.com"
           git config --local user.name "$GITHUB_ACTOR"
           git add .
