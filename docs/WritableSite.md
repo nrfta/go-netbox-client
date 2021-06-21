@@ -4,10 +4,13 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **int32** |  | [optional] [default to null]
+**Url** | **string** |  | [optional] [default to null]
+**Display** | **string** |  | [optional] [default to null]
 **Name** | **string** |  | [default to null]
 **Slug** | **string** |  | [default to null]
 **Status** | **string** |  | [optional] [default to null]
 **Region** | **int32** |  | [optional] [default to null]
+**Group** | **int32** |  | [optional] [default to null]
 **Tenant** | **int32** |  | [optional] [default to null]
 **Facility** | **string** | Local facility ID or description | [optional] [default to null]
 **Asn** | **int32** | 32-bit autonomous system number | [optional] [default to null]
@@ -21,7 +24,7 @@ Name | Type | Description | Notes
 **ContactPhone** | **string** |  | [optional] [default to null]
 **ContactEmail** | **string** |  | [optional] [default to null]
 **Comments** | **string** |  | [optional] [default to null]
-**Tags** | **[]string** |  | [optional] [default to null]
+**Tags** | [**[]NestedTag**](NestedTag.md) |  | [optional] [default to null]
 **CustomFields** | [***interface{}**](interface{}.md) |  | [optional] [default to null]
 **Created** | **string** |  | [optional] [default to null]
 **LastUpdated** | [**time.Time**](time.Time.md) |  | [optional] [default to null]

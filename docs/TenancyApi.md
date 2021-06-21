@@ -1,15 +1,21 @@
 # \TenancyApi
 
-All URIs are relative to *https://netbox/api*
+All URIs are relative to *http://localhost:8000/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**TenancyTenantGroupsBulkDelete**](TenancyApi.md#TenancyTenantGroupsBulkDelete) | **Delete** /tenancy/tenant-groups/ | 
+[**TenancyTenantGroupsBulkPartialUpdate**](TenancyApi.md#TenancyTenantGroupsBulkPartialUpdate) | **Patch** /tenancy/tenant-groups/ | 
+[**TenancyTenantGroupsBulkUpdate**](TenancyApi.md#TenancyTenantGroupsBulkUpdate) | **Put** /tenancy/tenant-groups/ | 
 [**TenancyTenantGroupsCreate**](TenancyApi.md#TenancyTenantGroupsCreate) | **Post** /tenancy/tenant-groups/ | 
 [**TenancyTenantGroupsDelete**](TenancyApi.md#TenancyTenantGroupsDelete) | **Delete** /tenancy/tenant-groups/{id}/ | 
 [**TenancyTenantGroupsList**](TenancyApi.md#TenancyTenantGroupsList) | **Get** /tenancy/tenant-groups/ | 
 [**TenancyTenantGroupsPartialUpdate**](TenancyApi.md#TenancyTenantGroupsPartialUpdate) | **Patch** /tenancy/tenant-groups/{id}/ | 
 [**TenancyTenantGroupsRead**](TenancyApi.md#TenancyTenantGroupsRead) | **Get** /tenancy/tenant-groups/{id}/ | 
 [**TenancyTenantGroupsUpdate**](TenancyApi.md#TenancyTenantGroupsUpdate) | **Put** /tenancy/tenant-groups/{id}/ | 
+[**TenancyTenantsBulkDelete**](TenancyApi.md#TenancyTenantsBulkDelete) | **Delete** /tenancy/tenants/ | 
+[**TenancyTenantsBulkPartialUpdate**](TenancyApi.md#TenancyTenantsBulkPartialUpdate) | **Patch** /tenancy/tenants/ | 
+[**TenancyTenantsBulkUpdate**](TenancyApi.md#TenancyTenantsBulkUpdate) | **Put** /tenancy/tenants/ | 
 [**TenancyTenantsCreate**](TenancyApi.md#TenancyTenantsCreate) | **Post** /tenancy/tenants/ | 
 [**TenancyTenantsDelete**](TenancyApi.md#TenancyTenantsDelete) | **Delete** /tenancy/tenants/{id}/ | 
 [**TenancyTenantsList**](TenancyApi.md#TenancyTenantsList) | **Get** /tenancy/tenants/ | 
@@ -17,6 +23,86 @@ Method | HTTP request | Description
 [**TenancyTenantsRead**](TenancyApi.md#TenancyTenantsRead) | **Get** /tenancy/tenants/{id}/ | 
 [**TenancyTenantsUpdate**](TenancyApi.md#TenancyTenantsUpdate) | **Put** /tenancy/tenants/{id}/ | 
 
+
+# **TenancyTenantGroupsBulkDelete**
+> TenancyTenantGroupsBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **TenancyTenantGroupsBulkPartialUpdate**
+> TenantGroup TenancyTenantGroupsBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableTenantGroup**](WritableTenantGroup.md)|  | 
+
+### Return type
+
+[**TenantGroup**](TenantGroup.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **TenancyTenantGroupsBulkUpdate**
+> TenantGroup TenancyTenantGroupsBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableTenantGroup**](WritableTenantGroup.md)|  | 
+
+### Return type
+
+[**TenantGroup**](TenantGroup.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **TenancyTenantGroupsCreate**
 > TenantGroup TenancyTenantGroupsCreate(ctx, data)
@@ -75,10 +161,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **TenancyTenantGroupsList**
-> InlineResponse20054 TenancyTenantGroupsList(ctx, optional)
+> InlineResponse20062 TenancyTenantGroupsList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -96,6 +182,12 @@ Name | Type | Description  | Notes
  **name** | **optional.String**|  | 
  **slug** | **optional.String**|  | 
  **description** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **parentId** | **optional.String**|  | 
  **parent** | **optional.String**|  | 
@@ -138,7 +230,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20054**](inline_response_200_54.md)
+[**InlineResponse20062**](inline_response_200_62.md)
 
 ### Authorization
 
@@ -184,7 +276,7 @@ Name | Type | Description  | Notes
 > TenantGroup TenancyTenantGroupsRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -225,6 +317,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TenantGroup**](TenantGroup.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **TenancyTenantsBulkDelete**
+> TenancyTenantsBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **TenancyTenantsBulkPartialUpdate**
+> Tenant TenancyTenantsBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableTenant**](WritableTenant.md)|  | 
+
+### Return type
+
+[**Tenant**](Tenant.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **TenancyTenantsBulkUpdate**
+> Tenant TenancyTenantsBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableTenant**](WritableTenant.md)|  | 
+
+### Return type
+
+[**Tenant**](Tenant.md)
 
 ### Authorization
 
@@ -294,10 +466,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **TenancyTenantsList**
-> InlineResponse20055 TenancyTenantsList(ctx, optional)
+> InlineResponse20063 TenancyTenantsList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -355,7 +527,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20055**](inline_response_200_55.md)
+[**InlineResponse20063**](inline_response_200_63.md)
 
 ### Authorization
 
@@ -401,7 +573,7 @@ Name | Type | Description  | Notes
 > Tenant TenancyTenantsRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 

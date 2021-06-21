@@ -1,33 +1,48 @@
 # \VirtualizationApi
 
-All URIs are relative to *https://netbox/api*
+All URIs are relative to *http://localhost:8000/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**VirtualizationClusterGroupsBulkDelete**](VirtualizationApi.md#VirtualizationClusterGroupsBulkDelete) | **Delete** /virtualization/cluster-groups/ | 
+[**VirtualizationClusterGroupsBulkPartialUpdate**](VirtualizationApi.md#VirtualizationClusterGroupsBulkPartialUpdate) | **Patch** /virtualization/cluster-groups/ | 
+[**VirtualizationClusterGroupsBulkUpdate**](VirtualizationApi.md#VirtualizationClusterGroupsBulkUpdate) | **Put** /virtualization/cluster-groups/ | 
 [**VirtualizationClusterGroupsCreate**](VirtualizationApi.md#VirtualizationClusterGroupsCreate) | **Post** /virtualization/cluster-groups/ | 
 [**VirtualizationClusterGroupsDelete**](VirtualizationApi.md#VirtualizationClusterGroupsDelete) | **Delete** /virtualization/cluster-groups/{id}/ | 
 [**VirtualizationClusterGroupsList**](VirtualizationApi.md#VirtualizationClusterGroupsList) | **Get** /virtualization/cluster-groups/ | 
 [**VirtualizationClusterGroupsPartialUpdate**](VirtualizationApi.md#VirtualizationClusterGroupsPartialUpdate) | **Patch** /virtualization/cluster-groups/{id}/ | 
 [**VirtualizationClusterGroupsRead**](VirtualizationApi.md#VirtualizationClusterGroupsRead) | **Get** /virtualization/cluster-groups/{id}/ | 
 [**VirtualizationClusterGroupsUpdate**](VirtualizationApi.md#VirtualizationClusterGroupsUpdate) | **Put** /virtualization/cluster-groups/{id}/ | 
+[**VirtualizationClusterTypesBulkDelete**](VirtualizationApi.md#VirtualizationClusterTypesBulkDelete) | **Delete** /virtualization/cluster-types/ | 
+[**VirtualizationClusterTypesBulkPartialUpdate**](VirtualizationApi.md#VirtualizationClusterTypesBulkPartialUpdate) | **Patch** /virtualization/cluster-types/ | 
+[**VirtualizationClusterTypesBulkUpdate**](VirtualizationApi.md#VirtualizationClusterTypesBulkUpdate) | **Put** /virtualization/cluster-types/ | 
 [**VirtualizationClusterTypesCreate**](VirtualizationApi.md#VirtualizationClusterTypesCreate) | **Post** /virtualization/cluster-types/ | 
 [**VirtualizationClusterTypesDelete**](VirtualizationApi.md#VirtualizationClusterTypesDelete) | **Delete** /virtualization/cluster-types/{id}/ | 
 [**VirtualizationClusterTypesList**](VirtualizationApi.md#VirtualizationClusterTypesList) | **Get** /virtualization/cluster-types/ | 
 [**VirtualizationClusterTypesPartialUpdate**](VirtualizationApi.md#VirtualizationClusterTypesPartialUpdate) | **Patch** /virtualization/cluster-types/{id}/ | 
 [**VirtualizationClusterTypesRead**](VirtualizationApi.md#VirtualizationClusterTypesRead) | **Get** /virtualization/cluster-types/{id}/ | 
 [**VirtualizationClusterTypesUpdate**](VirtualizationApi.md#VirtualizationClusterTypesUpdate) | **Put** /virtualization/cluster-types/{id}/ | 
+[**VirtualizationClustersBulkDelete**](VirtualizationApi.md#VirtualizationClustersBulkDelete) | **Delete** /virtualization/clusters/ | 
+[**VirtualizationClustersBulkPartialUpdate**](VirtualizationApi.md#VirtualizationClustersBulkPartialUpdate) | **Patch** /virtualization/clusters/ | 
+[**VirtualizationClustersBulkUpdate**](VirtualizationApi.md#VirtualizationClustersBulkUpdate) | **Put** /virtualization/clusters/ | 
 [**VirtualizationClustersCreate**](VirtualizationApi.md#VirtualizationClustersCreate) | **Post** /virtualization/clusters/ | 
 [**VirtualizationClustersDelete**](VirtualizationApi.md#VirtualizationClustersDelete) | **Delete** /virtualization/clusters/{id}/ | 
 [**VirtualizationClustersList**](VirtualizationApi.md#VirtualizationClustersList) | **Get** /virtualization/clusters/ | 
 [**VirtualizationClustersPartialUpdate**](VirtualizationApi.md#VirtualizationClustersPartialUpdate) | **Patch** /virtualization/clusters/{id}/ | 
 [**VirtualizationClustersRead**](VirtualizationApi.md#VirtualizationClustersRead) | **Get** /virtualization/clusters/{id}/ | 
 [**VirtualizationClustersUpdate**](VirtualizationApi.md#VirtualizationClustersUpdate) | **Put** /virtualization/clusters/{id}/ | 
+[**VirtualizationInterfacesBulkDelete**](VirtualizationApi.md#VirtualizationInterfacesBulkDelete) | **Delete** /virtualization/interfaces/ | 
+[**VirtualizationInterfacesBulkPartialUpdate**](VirtualizationApi.md#VirtualizationInterfacesBulkPartialUpdate) | **Patch** /virtualization/interfaces/ | 
+[**VirtualizationInterfacesBulkUpdate**](VirtualizationApi.md#VirtualizationInterfacesBulkUpdate) | **Put** /virtualization/interfaces/ | 
 [**VirtualizationInterfacesCreate**](VirtualizationApi.md#VirtualizationInterfacesCreate) | **Post** /virtualization/interfaces/ | 
 [**VirtualizationInterfacesDelete**](VirtualizationApi.md#VirtualizationInterfacesDelete) | **Delete** /virtualization/interfaces/{id}/ | 
 [**VirtualizationInterfacesList**](VirtualizationApi.md#VirtualizationInterfacesList) | **Get** /virtualization/interfaces/ | 
 [**VirtualizationInterfacesPartialUpdate**](VirtualizationApi.md#VirtualizationInterfacesPartialUpdate) | **Patch** /virtualization/interfaces/{id}/ | 
 [**VirtualizationInterfacesRead**](VirtualizationApi.md#VirtualizationInterfacesRead) | **Get** /virtualization/interfaces/{id}/ | 
 [**VirtualizationInterfacesUpdate**](VirtualizationApi.md#VirtualizationInterfacesUpdate) | **Put** /virtualization/interfaces/{id}/ | 
+[**VirtualizationVirtualMachinesBulkDelete**](VirtualizationApi.md#VirtualizationVirtualMachinesBulkDelete) | **Delete** /virtualization/virtual-machines/ | 
+[**VirtualizationVirtualMachinesBulkPartialUpdate**](VirtualizationApi.md#VirtualizationVirtualMachinesBulkPartialUpdate) | **Patch** /virtualization/virtual-machines/ | 
+[**VirtualizationVirtualMachinesBulkUpdate**](VirtualizationApi.md#VirtualizationVirtualMachinesBulkUpdate) | **Put** /virtualization/virtual-machines/ | 
 [**VirtualizationVirtualMachinesCreate**](VirtualizationApi.md#VirtualizationVirtualMachinesCreate) | **Post** /virtualization/virtual-machines/ | 
 [**VirtualizationVirtualMachinesDelete**](VirtualizationApi.md#VirtualizationVirtualMachinesDelete) | **Delete** /virtualization/virtual-machines/{id}/ | 
 [**VirtualizationVirtualMachinesList**](VirtualizationApi.md#VirtualizationVirtualMachinesList) | **Get** /virtualization/virtual-machines/ | 
@@ -35,6 +50,86 @@ Method | HTTP request | Description
 [**VirtualizationVirtualMachinesRead**](VirtualizationApi.md#VirtualizationVirtualMachinesRead) | **Get** /virtualization/virtual-machines/{id}/ | 
 [**VirtualizationVirtualMachinesUpdate**](VirtualizationApi.md#VirtualizationVirtualMachinesUpdate) | **Put** /virtualization/virtual-machines/{id}/ | 
 
+
+# **VirtualizationClusterGroupsBulkDelete**
+> VirtualizationClusterGroupsBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **VirtualizationClusterGroupsBulkPartialUpdate**
+> ClusterGroup VirtualizationClusterGroupsBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**ClusterGroup**](ClusterGroup.md)|  | 
+
+### Return type
+
+[**ClusterGroup**](ClusterGroup.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **VirtualizationClusterGroupsBulkUpdate**
+> ClusterGroup VirtualizationClusterGroupsBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**ClusterGroup**](ClusterGroup.md)|  | 
+
+### Return type
+
+[**ClusterGroup**](ClusterGroup.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **VirtualizationClusterGroupsCreate**
 > ClusterGroup VirtualizationClusterGroupsCreate(ctx, data)
@@ -93,10 +188,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **VirtualizationClusterGroupsList**
-> InlineResponse20056 VirtualizationClusterGroupsList(ctx, optional)
+> InlineResponse20067 VirtualizationClusterGroupsList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -114,6 +209,12 @@ Name | Type | Description  | Notes
  **name** | **optional.String**|  | 
  **slug** | **optional.String**|  | 
  **description** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
@@ -152,7 +253,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20056**](inline_response_200_56.md)
+[**InlineResponse20067**](inline_response_200_67.md)
 
 ### Authorization
 
@@ -198,7 +299,7 @@ Name | Type | Description  | Notes
 > ClusterGroup VirtualizationClusterGroupsRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -239,6 +340,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ClusterGroup**](ClusterGroup.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **VirtualizationClusterTypesBulkDelete**
+> VirtualizationClusterTypesBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **VirtualizationClusterTypesBulkPartialUpdate**
+> ClusterType VirtualizationClusterTypesBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**ClusterType**](ClusterType.md)|  | 
+
+### Return type
+
+[**ClusterType**](ClusterType.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **VirtualizationClusterTypesBulkUpdate**
+> ClusterType VirtualizationClusterTypesBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**ClusterType**](ClusterType.md)|  | 
+
+### Return type
+
+[**ClusterType**](ClusterType.md)
 
 ### Authorization
 
@@ -308,10 +489,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **VirtualizationClusterTypesList**
-> InlineResponse20057 VirtualizationClusterTypesList(ctx, optional)
+> InlineResponse20068 VirtualizationClusterTypesList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -329,6 +510,12 @@ Name | Type | Description  | Notes
  **name** | **optional.String**|  | 
  **slug** | **optional.String**|  | 
  **description** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
@@ -367,7 +554,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20057**](inline_response_200_57.md)
+[**InlineResponse20068**](inline_response_200_68.md)
 
 ### Authorization
 
@@ -413,7 +600,7 @@ Name | Type | Description  | Notes
 > ClusterType VirtualizationClusterTypesRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -454,6 +641,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ClusterType**](ClusterType.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **VirtualizationClustersBulkDelete**
+> VirtualizationClustersBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **VirtualizationClustersBulkPartialUpdate**
+> Cluster VirtualizationClustersBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableCluster**](WritableCluster.md)|  | 
+
+### Return type
+
+[**Cluster**](Cluster.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **VirtualizationClustersBulkUpdate**
+> Cluster VirtualizationClustersBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableCluster**](WritableCluster.md)|  | 
+
+### Return type
+
+[**Cluster**](Cluster.md)
 
 ### Authorization
 
@@ -523,10 +790,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **VirtualizationClustersList**
-> InlineResponse20058 VirtualizationClustersList(ctx, optional)
+> InlineResponse20069 VirtualizationClustersList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -542,19 +809,21 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **optional.String**|  | 
  **name** | **optional.String**|  | 
- **tenantGroupId** | **optional.String**|  | 
- **tenantGroup** | **optional.String**|  | 
- **tenantId** | **optional.String**|  | 
- **tenant** | **optional.String**|  | 
  **created** | **optional.String**|  | 
  **createdGte** | **optional.String**|  | 
  **createdLte** | **optional.String**|  | 
  **lastUpdated** | **optional.String**|  | 
  **lastUpdatedGte** | **optional.String**|  | 
  **lastUpdatedLte** | **optional.String**|  | 
+ **tenantGroupId** | **optional.String**|  | 
+ **tenantGroup** | **optional.String**|  | 
+ **tenantId** | **optional.String**|  | 
+ **tenant** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **regionId** | **optional.String**|  | 
  **region** | **optional.String**|  | 
+ **siteGroupId** | **optional.String**|  | 
+ **siteGroup** | **optional.String**|  | 
  **siteId** | **optional.String**|  | 
  **site** | **optional.String**|  | 
  **groupId** | **optional.String**|  | 
@@ -582,6 +851,8 @@ Name | Type | Description  | Notes
  **tenantN** | **optional.String**|  | 
  **regionIdN** | **optional.String**|  | 
  **regionN** | **optional.String**|  | 
+ **siteGroupIdN** | **optional.String**|  | 
+ **siteGroupN** | **optional.String**|  | 
  **siteIdN** | **optional.String**|  | 
  **siteN** | **optional.String**|  | 
  **groupIdN** | **optional.String**|  | 
@@ -594,7 +865,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20058**](inline_response_200_58.md)
+[**InlineResponse20069**](inline_response_200_69.md)
 
 ### Authorization
 
@@ -640,7 +911,7 @@ Name | Type | Description  | Notes
 > Cluster VirtualizationClustersRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -693,8 +964,32 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **VirtualizationInterfacesCreate**
-> VirtualMachineInterface VirtualizationInterfacesCreate(ctx, data)
+# **VirtualizationInterfacesBulkDelete**
+> VirtualizationInterfacesBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **VirtualizationInterfacesBulkPartialUpdate**
+> VmInterface VirtualizationInterfacesBulkPartialUpdate(ctx, data)
 
 
 
@@ -704,11 +999,67 @@ Name | Type | Description  | Notes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **data** | [**WritableVirtualMachineInterface**](WritableVirtualMachineInterface.md)|  | 
+  **data** | [**WritableVmInterface**](WritableVmInterface.md)|  | 
 
 ### Return type
 
-[**VirtualMachineInterface**](VirtualMachineInterface.md)
+[**VmInterface**](VMInterface.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **VirtualizationInterfacesBulkUpdate**
+> VmInterface VirtualizationInterfacesBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableVmInterface**](WritableVmInterface.md)|  | 
+
+### Return type
+
+[**VmInterface**](VMInterface.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **VirtualizationInterfacesCreate**
+> VmInterface VirtualizationInterfacesCreate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableVmInterface**](WritableVmInterface.md)|  | 
+
+### Return type
+
+[**VmInterface**](VMInterface.md)
 
 ### Authorization
 
@@ -750,10 +1101,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **VirtualizationInterfacesList**
-> InlineResponse20059 VirtualizationInterfacesList(ctx, optional)
+> InlineResponse20070 VirtualizationInterfacesList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -771,10 +1122,20 @@ Name | Type | Description  | Notes
  **name** | **optional.String**|  | 
  **enabled** | **optional.String**|  | 
  **mtu** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
+ **clusterId** | **optional.String**|  | 
+ **cluster** | **optional.String**|  | 
  **virtualMachineId** | **optional.String**|  | 
  **virtualMachine** | **optional.String**|  | 
+ **parentId** | **optional.String**|  | 
  **macAddress** | **optional.String**|  | 
+ **tag** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
  **idLt** | **optional.String**|  | 
@@ -794,8 +1155,11 @@ Name | Type | Description  | Notes
  **mtuLt** | **optional.String**|  | 
  **mtuGte** | **optional.String**|  | 
  **mtuGt** | **optional.String**|  | 
+ **clusterIdN** | **optional.String**|  | 
+ **clusterN** | **optional.String**|  | 
  **virtualMachineIdN** | **optional.String**|  | 
  **virtualMachineN** | **optional.String**|  | 
+ **parentIdN** | **optional.String**|  | 
  **macAddressN** | **optional.String**|  | 
  **macAddressIc** | **optional.String**|  | 
  **macAddressNic** | **optional.String**|  | 
@@ -805,12 +1169,13 @@ Name | Type | Description  | Notes
  **macAddressNisw** | **optional.String**|  | 
  **macAddressIe** | **optional.String**|  | 
  **macAddressNie** | **optional.String**|  | 
+ **tagN** | **optional.String**|  | 
  **limit** | **optional.Int32**| Number of results to return per page. | 
  **offset** | **optional.Int32**| The initial index from which to return the results. | 
 
 ### Return type
 
-[**InlineResponse20059**](inline_response_200_59.md)
+[**InlineResponse20070**](inline_response_200_70.md)
 
 ### Authorization
 
@@ -824,7 +1189,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **VirtualizationInterfacesPartialUpdate**
-> VirtualMachineInterface VirtualizationInterfacesPartialUpdate(ctx, id, data)
+> VmInterface VirtualizationInterfacesPartialUpdate(ctx, id, data)
 
 
 
@@ -835,11 +1200,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **id** | **int32**| A unique integer value identifying this interface. | 
-  **data** | [**WritableVirtualMachineInterface**](WritableVirtualMachineInterface.md)|  | 
+  **data** | [**WritableVmInterface**](WritableVmInterface.md)|  | 
 
 ### Return type
 
-[**VirtualMachineInterface**](VirtualMachineInterface.md)
+[**VmInterface**](VMInterface.md)
 
 ### Authorization
 
@@ -853,10 +1218,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **VirtualizationInterfacesRead**
-> VirtualMachineInterface VirtualizationInterfacesRead(ctx, id)
+> VmInterface VirtualizationInterfacesRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -867,7 +1232,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**VirtualMachineInterface**](VirtualMachineInterface.md)
+[**VmInterface**](VMInterface.md)
 
 ### Authorization
 
@@ -881,7 +1246,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **VirtualizationInterfacesUpdate**
-> VirtualMachineInterface VirtualizationInterfacesUpdate(ctx, id, data)
+> VmInterface VirtualizationInterfacesUpdate(ctx, id, data)
 
 
 
@@ -892,11 +1257,91 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **id** | **int32**| A unique integer value identifying this interface. | 
-  **data** | [**WritableVirtualMachineInterface**](WritableVirtualMachineInterface.md)|  | 
+  **data** | [**WritableVmInterface**](WritableVmInterface.md)|  | 
 
 ### Return type
 
-[**VirtualMachineInterface**](VirtualMachineInterface.md)
+[**VmInterface**](VMInterface.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **VirtualizationVirtualMachinesBulkDelete**
+> VirtualizationVirtualMachinesBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **VirtualizationVirtualMachinesBulkPartialUpdate**
+> VirtualMachineWithConfigContext VirtualizationVirtualMachinesBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableVirtualMachineWithConfigContext**](WritableVirtualMachineWithConfigContext.md)|  | 
+
+### Return type
+
+[**VirtualMachineWithConfigContext**](VirtualMachineWithConfigContext.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **VirtualizationVirtualMachinesBulkUpdate**
+> VirtualMachineWithConfigContext VirtualizationVirtualMachinesBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableVirtualMachineWithConfigContext**](WritableVirtualMachineWithConfigContext.md)|  | 
+
+### Return type
+
+[**VirtualMachineWithConfigContext**](VirtualMachineWithConfigContext.md)
 
 ### Authorization
 
@@ -966,10 +1411,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **VirtualizationVirtualMachinesList**
-> InlineResponse20060 VirtualizationVirtualMachinesList(ctx, optional)
+> InlineResponse20071 VirtualizationVirtualMachinesList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -989,17 +1434,17 @@ Name | Type | Description  | Notes
  **vcpus** | **optional.String**|  | 
  **memory** | **optional.String**|  | 
  **disk** | **optional.String**|  | 
- **localContextData** | **optional.String**|  | 
- **tenantGroupId** | **optional.String**|  | 
- **tenantGroup** | **optional.String**|  | 
- **tenantId** | **optional.String**|  | 
- **tenant** | **optional.String**|  | 
  **created** | **optional.String**|  | 
  **createdGte** | **optional.String**|  | 
  **createdLte** | **optional.String**|  | 
  **lastUpdated** | **optional.String**|  | 
  **lastUpdatedGte** | **optional.String**|  | 
  **lastUpdatedLte** | **optional.String**|  | 
+ **tenantGroupId** | **optional.String**|  | 
+ **tenantGroup** | **optional.String**|  | 
+ **tenantId** | **optional.String**|  | 
+ **tenant** | **optional.String**|  | 
+ **localContextData** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **status** | **optional.String**|  | 
  **clusterGroupId** | **optional.String**|  | 
@@ -1009,6 +1454,8 @@ Name | Type | Description  | Notes
  **clusterId** | **optional.String**|  | 
  **regionId** | **optional.String**|  | 
  **region** | **optional.String**|  | 
+ **siteGroupId** | **optional.String**|  | 
+ **siteGroup** | **optional.String**|  | 
  **siteId** | **optional.String**|  | 
  **site** | **optional.String**|  | 
  **roleId** | **optional.String**|  | 
@@ -1016,6 +1463,7 @@ Name | Type | Description  | Notes
  **platformId** | **optional.String**|  | 
  **platform** | **optional.String**|  | 
  **macAddress** | **optional.String**|  | 
+ **hasPrimaryIp** | **optional.String**|  | 
  **tag** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
@@ -1059,6 +1507,8 @@ Name | Type | Description  | Notes
  **clusterIdN** | **optional.String**|  | 
  **regionIdN** | **optional.String**|  | 
  **regionN** | **optional.String**|  | 
+ **siteGroupIdN** | **optional.String**|  | 
+ **siteGroupN** | **optional.String**|  | 
  **siteIdN** | **optional.String**|  | 
  **siteN** | **optional.String**|  | 
  **roleIdN** | **optional.String**|  | 
@@ -1080,7 +1530,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20060**](inline_response_200_60.md)
+[**InlineResponse20071**](inline_response_200_71.md)
 
 ### Authorization
 
@@ -1126,7 +1576,7 @@ Name | Type | Description  | Notes
 > VirtualMachineWithConfigContext VirtualizationVirtualMachinesRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 

@@ -4,11 +4,13 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **int32** |  | [optional] [default to null]
+**Url** | **string** |  | [optional] [default to null]
+**Display** | **string** |  | [optional] [default to null]
 **Name** | **string** |  | [default to null]
 **FacilityId** | **string** | Locally-assigned identifier | [optional] [default to null]
 **DisplayName** | **string** |  | [optional] [default to null]
 **Site** | [***NestedSite**](NestedSite.md) |  | [default to null]
-**Group** | [***NestedRackGroup**](NestedRackGroup.md) |  | [optional] [default to null]
+**Location** | [***NestedLocation**](NestedLocation.md) |  | [optional] [default to null]
 **Tenant** | [***NestedTenant**](NestedTenant.md) |  | [optional] [default to null]
 **Status** | [***Status4**](Status_4.md) |  | [optional] [default to null]
 **Role** | [***NestedRackRole**](NestedRackRole.md) |  | [optional] [default to null]
@@ -22,7 +24,7 @@ Name | Type | Description | Notes
 **OuterDepth** | **int32** | Outer dimension of rack (depth) | [optional] [default to null]
 **OuterUnit** | [***OuterUnit**](Outer unit.md) |  | [optional] [default to null]
 **Comments** | **string** |  | [optional] [default to null]
-**Tags** | **[]string** |  | [optional] [default to null]
+**Tags** | [**[]NestedTag**](NestedTag.md) |  | [optional] [default to null]
 **CustomFields** | [***interface{}**](interface{}.md) |  | [optional] [default to null]
 **Created** | **string** |  | [optional] [default to null]
 **LastUpdated** | [**time.Time**](time.Time.md) |  | [optional] [default to null]

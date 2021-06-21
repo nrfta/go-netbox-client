@@ -4,6 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **int32** |  | [optional] [default to null]
+**Url** | **string** |  | [optional] [default to null]
+**Display** | **string** |  | [optional] [default to null]
 **Name** | **string** |  | [optional] [default to null]
 **DisplayName** | **string** |  | [optional] [default to null]
 **DeviceType** | **int32** |  | [default to null]
@@ -13,6 +15,7 @@ Name | Type | Description | Notes
 **Serial** | **string** |  | [optional] [default to null]
 **AssetTag** | **string** | A unique tag used to identify this device | [optional] [default to null]
 **Site** | **int32** |  | [default to null]
+**Location** | **int32** |  | [optional] [default to null]
 **Rack** | **int32** |  | [optional] [default to null]
 **Position** | **int32** | The lowest-numbered unit occupied by the device | [optional] [default to null]
 **Face** | **string** |  | [optional] [default to null]
@@ -27,9 +30,9 @@ Name | Type | Description | Notes
 **VcPriority** | **int32** |  | [optional] [default to null]
 **Comments** | **string** |  | [optional] [default to null]
 **LocalContextData** | **string** |  | [optional] [default to null]
-**Tags** | **[]string** |  | [optional] [default to null]
+**Tags** | [**[]NestedTag**](NestedTag.md) |  | [optional] [default to null]
 **CustomFields** | [***interface{}**](interface{}.md) |  | [optional] [default to null]
-**ConfigContext** | [***interface{}**](interface{}.md) |  | [optional] [default to null]
+**ConfigContext** | **map[string]string** |  | [optional] [default to null]
 **Created** | **string** |  | [optional] [default to null]
 **LastUpdated** | [**time.Time**](time.Time.md) |  | [optional] [default to null]
 

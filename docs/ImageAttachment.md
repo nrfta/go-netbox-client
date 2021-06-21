@@ -4,6 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **int32** |  | [optional] [default to null]
+**Url** | **string** |  | [optional] [default to null]
+**Display** | **string** |  | [optional] [default to null]
 **ContentType** | **string** |  | [default to null]
 **ObjectId** | **int32** |  | [default to null]
 **Parent** | **map[string]string** |  | [optional] [default to null]

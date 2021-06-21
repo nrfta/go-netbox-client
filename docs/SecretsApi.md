@@ -1,17 +1,23 @@
 # \SecretsApi
 
-All URIs are relative to *https://netbox/api*
+All URIs are relative to *http://localhost:8000/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**SecretsGenerateRsaKeyPairList**](SecretsApi.md#SecretsGenerateRsaKeyPairList) | **Get** /secrets/generate-rsa-key-pair/ | This endpoint can be used to generate a new RSA key pair. The keys are returned in PEM format.
 [**SecretsGetSessionKeyCreate**](SecretsApi.md#SecretsGetSessionKeyCreate) | **Post** /secrets/get-session-key/ | 
+[**SecretsSecretRolesBulkDelete**](SecretsApi.md#SecretsSecretRolesBulkDelete) | **Delete** /secrets/secret-roles/ | 
+[**SecretsSecretRolesBulkPartialUpdate**](SecretsApi.md#SecretsSecretRolesBulkPartialUpdate) | **Patch** /secrets/secret-roles/ | 
+[**SecretsSecretRolesBulkUpdate**](SecretsApi.md#SecretsSecretRolesBulkUpdate) | **Put** /secrets/secret-roles/ | 
 [**SecretsSecretRolesCreate**](SecretsApi.md#SecretsSecretRolesCreate) | **Post** /secrets/secret-roles/ | 
 [**SecretsSecretRolesDelete**](SecretsApi.md#SecretsSecretRolesDelete) | **Delete** /secrets/secret-roles/{id}/ | 
 [**SecretsSecretRolesList**](SecretsApi.md#SecretsSecretRolesList) | **Get** /secrets/secret-roles/ | 
 [**SecretsSecretRolesPartialUpdate**](SecretsApi.md#SecretsSecretRolesPartialUpdate) | **Patch** /secrets/secret-roles/{id}/ | 
 [**SecretsSecretRolesRead**](SecretsApi.md#SecretsSecretRolesRead) | **Get** /secrets/secret-roles/{id}/ | 
 [**SecretsSecretRolesUpdate**](SecretsApi.md#SecretsSecretRolesUpdate) | **Put** /secrets/secret-roles/{id}/ | 
+[**SecretsSecretsBulkDelete**](SecretsApi.md#SecretsSecretsBulkDelete) | **Delete** /secrets/secrets/ | 
+[**SecretsSecretsBulkPartialUpdate**](SecretsApi.md#SecretsSecretsBulkPartialUpdate) | **Patch** /secrets/secrets/ | 
+[**SecretsSecretsBulkUpdate**](SecretsApi.md#SecretsSecretsBulkUpdate) | **Put** /secrets/secrets/ | 
 [**SecretsSecretsCreate**](SecretsApi.md#SecretsSecretsCreate) | **Post** /secrets/secrets/ | 
 [**SecretsSecretsDelete**](SecretsApi.md#SecretsSecretsDelete) | **Delete** /secrets/secrets/{id}/ | 
 [**SecretsSecretsList**](SecretsApi.md#SecretsSecretsList) | **Get** /secrets/secrets/ | 
@@ -56,6 +62,86 @@ This endpoint does not need any parameter.
 ### Return type
 
  (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **SecretsSecretRolesBulkDelete**
+> SecretsSecretRolesBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **SecretsSecretRolesBulkPartialUpdate**
+> SecretRole SecretsSecretRolesBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**SecretRole**](SecretRole.md)|  | 
+
+### Return type
+
+[**SecretRole**](SecretRole.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **SecretsSecretRolesBulkUpdate**
+> SecretRole SecretsSecretRolesBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**SecretRole**](SecretRole.md)|  | 
+
+### Return type
+
+[**SecretRole**](SecretRole.md)
 
 ### Authorization
 
@@ -125,10 +211,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **SecretsSecretRolesList**
-> InlineResponse20052 SecretsSecretRolesList(ctx, optional)
+> InlineResponse20060 SecretsSecretRolesList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -145,6 +231,12 @@ Name | Type | Description  | Notes
  **id** | **optional.String**|  | 
  **name** | **optional.String**|  | 
  **slug** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
@@ -174,7 +266,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20052**](inline_response_200_52.md)
+[**InlineResponse20060**](inline_response_200_60.md)
 
 ### Authorization
 
@@ -220,7 +312,7 @@ Name | Type | Description  | Notes
 > SecretRole SecretsSecretRolesRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -261,6 +353,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**SecretRole**](SecretRole.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **SecretsSecretsBulkDelete**
+> SecretsSecretsBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **SecretsSecretsBulkPartialUpdate**
+> Secret SecretsSecretsBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableSecret**](WritableSecret.md)|  | 
+
+### Return type
+
+[**Secret**](Secret.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **SecretsSecretsBulkUpdate**
+> Secret SecretsSecretsBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableSecret**](WritableSecret.md)|  | 
+
+### Return type
+
+[**Secret**](Secret.md)
 
 ### Authorization
 
@@ -330,7 +502,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **SecretsSecretsList**
-> InlineResponse20053 SecretsSecretsList(ctx, optional)
+> InlineResponse20061 SecretsSecretsList(ctx, optional)
 
 
 
@@ -358,8 +530,10 @@ Name | Type | Description  | Notes
  **q** | **optional.String**|  | 
  **roleId** | **optional.String**|  | 
  **role** | **optional.String**|  | 
- **deviceId** | **optional.String**|  | 
  **device** | **optional.String**|  | 
+ **deviceId** | **optional.String**|  | 
+ **virtualMachine** | **optional.String**|  | 
+ **virtualMachineId** | **optional.String**|  | 
  **tag** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
@@ -377,15 +551,17 @@ Name | Type | Description  | Notes
  **nameNie** | **optional.String**|  | 
  **roleIdN** | **optional.String**|  | 
  **roleN** | **optional.String**|  | 
- **deviceIdN** | **optional.String**|  | 
  **deviceN** | **optional.String**|  | 
+ **deviceIdN** | **optional.String**|  | 
+ **virtualMachineN** | **optional.String**|  | 
+ **virtualMachineIdN** | **optional.String**|  | 
  **tagN** | **optional.String**|  | 
  **limit** | **optional.Int32**| Number of results to return per page. | 
  **offset** | **optional.Int32**| The initial index from which to return the results. | 
 
 ### Return type
 
-[**InlineResponse20053**](inline_response_200_53.md)
+[**InlineResponse20061**](inline_response_200_61.md)
 
 ### Authorization
 

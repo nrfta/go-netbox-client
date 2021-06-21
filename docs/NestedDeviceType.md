@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **int32** |  | [optional] [default to null]
 **Url** | **string** |  | [optional] [default to null]
+**Display** | **string** |  | [optional] [default to null]
 **Manufacturer** | [***NestedManufacturer**](NestedManufacturer.md) |  | [optional] [default to null]
 **Model** | **string** |  | [default to null]
 **Slug** | **string** |  | [default to null]

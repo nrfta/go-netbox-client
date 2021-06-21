@@ -4,12 +4,16 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **int32** |  | [optional] [default to null]
+**Url** | **string** |  | [optional] [default to null]
+**Display** | **string** |  | [optional] [default to null]
 **Name** | **string** |  | [default to null]
 **Rd** | **string** | Unique route distinguisher (as defined in RFC 4364) | [optional] [default to null]
 **Tenant** | **int32** |  | [optional] [default to null]
 **EnforceUnique** | **bool** | Prevent duplicate prefixes/IP addresses within this VRF | [optional] [default to null]
 **Description** | **string** |  | [optional] [default to null]
-**Tags** | **[]string** |  | [optional] [default to null]
+**ImportTargets** | **[]int32** |  | [optional] [default to null]
+**ExportTargets** | **[]int32** |  | [optional] [default to null]
+**Tags** | [**[]NestedTag**](NestedTag.md) |  | [optional] [default to null]
 **DisplayName** | **string** |  | [optional] [default to null]
 **CustomFields** | [***interface{}**](interface{}.md) |  | [optional] [default to null]
 **Created** | **string** |  | [optional] [default to null]

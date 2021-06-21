@@ -1,9 +1,12 @@
 # \DcimApi
 
-All URIs are relative to *https://netbox/api*
+All URIs are relative to *http://localhost:8000/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**DcimCablesBulkDelete**](DcimApi.md#DcimCablesBulkDelete) | **Delete** /dcim/cables/ | 
+[**DcimCablesBulkPartialUpdate**](DcimApi.md#DcimCablesBulkPartialUpdate) | **Patch** /dcim/cables/ | 
+[**DcimCablesBulkUpdate**](DcimApi.md#DcimCablesBulkUpdate) | **Put** /dcim/cables/ | 
 [**DcimCablesCreate**](DcimApi.md#DcimCablesCreate) | **Post** /dcim/cables/ | 
 [**DcimCablesDelete**](DcimApi.md#DcimCablesDelete) | **Delete** /dcim/cables/{id}/ | 
 [**DcimCablesList**](DcimApi.md#DcimCablesList) | **Get** /dcim/cables/ | 
@@ -12,12 +15,18 @@ Method | HTTP request | Description
 [**DcimCablesUpdate**](DcimApi.md#DcimCablesUpdate) | **Put** /dcim/cables/{id}/ | 
 [**DcimConnectedDeviceList**](DcimApi.md#DcimConnectedDeviceList) | **Get** /dcim/connected-device/ | 
 [**DcimConsoleConnectionsList**](DcimApi.md#DcimConsoleConnectionsList) | **Get** /dcim/console-connections/ | 
+[**DcimConsolePortTemplatesBulkDelete**](DcimApi.md#DcimConsolePortTemplatesBulkDelete) | **Delete** /dcim/console-port-templates/ | 
+[**DcimConsolePortTemplatesBulkPartialUpdate**](DcimApi.md#DcimConsolePortTemplatesBulkPartialUpdate) | **Patch** /dcim/console-port-templates/ | 
+[**DcimConsolePortTemplatesBulkUpdate**](DcimApi.md#DcimConsolePortTemplatesBulkUpdate) | **Put** /dcim/console-port-templates/ | 
 [**DcimConsolePortTemplatesCreate**](DcimApi.md#DcimConsolePortTemplatesCreate) | **Post** /dcim/console-port-templates/ | 
 [**DcimConsolePortTemplatesDelete**](DcimApi.md#DcimConsolePortTemplatesDelete) | **Delete** /dcim/console-port-templates/{id}/ | 
 [**DcimConsolePortTemplatesList**](DcimApi.md#DcimConsolePortTemplatesList) | **Get** /dcim/console-port-templates/ | 
 [**DcimConsolePortTemplatesPartialUpdate**](DcimApi.md#DcimConsolePortTemplatesPartialUpdate) | **Patch** /dcim/console-port-templates/{id}/ | 
 [**DcimConsolePortTemplatesRead**](DcimApi.md#DcimConsolePortTemplatesRead) | **Get** /dcim/console-port-templates/{id}/ | 
 [**DcimConsolePortTemplatesUpdate**](DcimApi.md#DcimConsolePortTemplatesUpdate) | **Put** /dcim/console-port-templates/{id}/ | 
+[**DcimConsolePortsBulkDelete**](DcimApi.md#DcimConsolePortsBulkDelete) | **Delete** /dcim/console-ports/ | 
+[**DcimConsolePortsBulkPartialUpdate**](DcimApi.md#DcimConsolePortsBulkPartialUpdate) | **Patch** /dcim/console-ports/ | 
+[**DcimConsolePortsBulkUpdate**](DcimApi.md#DcimConsolePortsBulkUpdate) | **Put** /dcim/console-ports/ | 
 [**DcimConsolePortsCreate**](DcimApi.md#DcimConsolePortsCreate) | **Post** /dcim/console-ports/ | 
 [**DcimConsolePortsDelete**](DcimApi.md#DcimConsolePortsDelete) | **Delete** /dcim/console-ports/{id}/ | 
 [**DcimConsolePortsList**](DcimApi.md#DcimConsolePortsList) | **Get** /dcim/console-ports/ | 
@@ -25,12 +34,18 @@ Method | HTTP request | Description
 [**DcimConsolePortsRead**](DcimApi.md#DcimConsolePortsRead) | **Get** /dcim/console-ports/{id}/ | 
 [**DcimConsolePortsTrace**](DcimApi.md#DcimConsolePortsTrace) | **Get** /dcim/console-ports/{id}/trace/ | 
 [**DcimConsolePortsUpdate**](DcimApi.md#DcimConsolePortsUpdate) | **Put** /dcim/console-ports/{id}/ | 
+[**DcimConsoleServerPortTemplatesBulkDelete**](DcimApi.md#DcimConsoleServerPortTemplatesBulkDelete) | **Delete** /dcim/console-server-port-templates/ | 
+[**DcimConsoleServerPortTemplatesBulkPartialUpdate**](DcimApi.md#DcimConsoleServerPortTemplatesBulkPartialUpdate) | **Patch** /dcim/console-server-port-templates/ | 
+[**DcimConsoleServerPortTemplatesBulkUpdate**](DcimApi.md#DcimConsoleServerPortTemplatesBulkUpdate) | **Put** /dcim/console-server-port-templates/ | 
 [**DcimConsoleServerPortTemplatesCreate**](DcimApi.md#DcimConsoleServerPortTemplatesCreate) | **Post** /dcim/console-server-port-templates/ | 
 [**DcimConsoleServerPortTemplatesDelete**](DcimApi.md#DcimConsoleServerPortTemplatesDelete) | **Delete** /dcim/console-server-port-templates/{id}/ | 
 [**DcimConsoleServerPortTemplatesList**](DcimApi.md#DcimConsoleServerPortTemplatesList) | **Get** /dcim/console-server-port-templates/ | 
 [**DcimConsoleServerPortTemplatesPartialUpdate**](DcimApi.md#DcimConsoleServerPortTemplatesPartialUpdate) | **Patch** /dcim/console-server-port-templates/{id}/ | 
 [**DcimConsoleServerPortTemplatesRead**](DcimApi.md#DcimConsoleServerPortTemplatesRead) | **Get** /dcim/console-server-port-templates/{id}/ | 
 [**DcimConsoleServerPortTemplatesUpdate**](DcimApi.md#DcimConsoleServerPortTemplatesUpdate) | **Put** /dcim/console-server-port-templates/{id}/ | 
+[**DcimConsoleServerPortsBulkDelete**](DcimApi.md#DcimConsoleServerPortsBulkDelete) | **Delete** /dcim/console-server-ports/ | 
+[**DcimConsoleServerPortsBulkPartialUpdate**](DcimApi.md#DcimConsoleServerPortsBulkPartialUpdate) | **Patch** /dcim/console-server-ports/ | 
+[**DcimConsoleServerPortsBulkUpdate**](DcimApi.md#DcimConsoleServerPortsBulkUpdate) | **Put** /dcim/console-server-ports/ | 
 [**DcimConsoleServerPortsCreate**](DcimApi.md#DcimConsoleServerPortsCreate) | **Post** /dcim/console-server-ports/ | 
 [**DcimConsoleServerPortsDelete**](DcimApi.md#DcimConsoleServerPortsDelete) | **Delete** /dcim/console-server-ports/{id}/ | 
 [**DcimConsoleServerPortsList**](DcimApi.md#DcimConsoleServerPortsList) | **Get** /dcim/console-server-ports/ | 
@@ -38,77 +53,121 @@ Method | HTTP request | Description
 [**DcimConsoleServerPortsRead**](DcimApi.md#DcimConsoleServerPortsRead) | **Get** /dcim/console-server-ports/{id}/ | 
 [**DcimConsoleServerPortsTrace**](DcimApi.md#DcimConsoleServerPortsTrace) | **Get** /dcim/console-server-ports/{id}/trace/ | 
 [**DcimConsoleServerPortsUpdate**](DcimApi.md#DcimConsoleServerPortsUpdate) | **Put** /dcim/console-server-ports/{id}/ | 
+[**DcimDeviceBayTemplatesBulkDelete**](DcimApi.md#DcimDeviceBayTemplatesBulkDelete) | **Delete** /dcim/device-bay-templates/ | 
+[**DcimDeviceBayTemplatesBulkPartialUpdate**](DcimApi.md#DcimDeviceBayTemplatesBulkPartialUpdate) | **Patch** /dcim/device-bay-templates/ | 
+[**DcimDeviceBayTemplatesBulkUpdate**](DcimApi.md#DcimDeviceBayTemplatesBulkUpdate) | **Put** /dcim/device-bay-templates/ | 
 [**DcimDeviceBayTemplatesCreate**](DcimApi.md#DcimDeviceBayTemplatesCreate) | **Post** /dcim/device-bay-templates/ | 
 [**DcimDeviceBayTemplatesDelete**](DcimApi.md#DcimDeviceBayTemplatesDelete) | **Delete** /dcim/device-bay-templates/{id}/ | 
 [**DcimDeviceBayTemplatesList**](DcimApi.md#DcimDeviceBayTemplatesList) | **Get** /dcim/device-bay-templates/ | 
 [**DcimDeviceBayTemplatesPartialUpdate**](DcimApi.md#DcimDeviceBayTemplatesPartialUpdate) | **Patch** /dcim/device-bay-templates/{id}/ | 
 [**DcimDeviceBayTemplatesRead**](DcimApi.md#DcimDeviceBayTemplatesRead) | **Get** /dcim/device-bay-templates/{id}/ | 
 [**DcimDeviceBayTemplatesUpdate**](DcimApi.md#DcimDeviceBayTemplatesUpdate) | **Put** /dcim/device-bay-templates/{id}/ | 
+[**DcimDeviceBaysBulkDelete**](DcimApi.md#DcimDeviceBaysBulkDelete) | **Delete** /dcim/device-bays/ | 
+[**DcimDeviceBaysBulkPartialUpdate**](DcimApi.md#DcimDeviceBaysBulkPartialUpdate) | **Patch** /dcim/device-bays/ | 
+[**DcimDeviceBaysBulkUpdate**](DcimApi.md#DcimDeviceBaysBulkUpdate) | **Put** /dcim/device-bays/ | 
 [**DcimDeviceBaysCreate**](DcimApi.md#DcimDeviceBaysCreate) | **Post** /dcim/device-bays/ | 
 [**DcimDeviceBaysDelete**](DcimApi.md#DcimDeviceBaysDelete) | **Delete** /dcim/device-bays/{id}/ | 
 [**DcimDeviceBaysList**](DcimApi.md#DcimDeviceBaysList) | **Get** /dcim/device-bays/ | 
 [**DcimDeviceBaysPartialUpdate**](DcimApi.md#DcimDeviceBaysPartialUpdate) | **Patch** /dcim/device-bays/{id}/ | 
 [**DcimDeviceBaysRead**](DcimApi.md#DcimDeviceBaysRead) | **Get** /dcim/device-bays/{id}/ | 
 [**DcimDeviceBaysUpdate**](DcimApi.md#DcimDeviceBaysUpdate) | **Put** /dcim/device-bays/{id}/ | 
+[**DcimDeviceRolesBulkDelete**](DcimApi.md#DcimDeviceRolesBulkDelete) | **Delete** /dcim/device-roles/ | 
+[**DcimDeviceRolesBulkPartialUpdate**](DcimApi.md#DcimDeviceRolesBulkPartialUpdate) | **Patch** /dcim/device-roles/ | 
+[**DcimDeviceRolesBulkUpdate**](DcimApi.md#DcimDeviceRolesBulkUpdate) | **Put** /dcim/device-roles/ | 
 [**DcimDeviceRolesCreate**](DcimApi.md#DcimDeviceRolesCreate) | **Post** /dcim/device-roles/ | 
 [**DcimDeviceRolesDelete**](DcimApi.md#DcimDeviceRolesDelete) | **Delete** /dcim/device-roles/{id}/ | 
 [**DcimDeviceRolesList**](DcimApi.md#DcimDeviceRolesList) | **Get** /dcim/device-roles/ | 
 [**DcimDeviceRolesPartialUpdate**](DcimApi.md#DcimDeviceRolesPartialUpdate) | **Patch** /dcim/device-roles/{id}/ | 
 [**DcimDeviceRolesRead**](DcimApi.md#DcimDeviceRolesRead) | **Get** /dcim/device-roles/{id}/ | 
 [**DcimDeviceRolesUpdate**](DcimApi.md#DcimDeviceRolesUpdate) | **Put** /dcim/device-roles/{id}/ | 
+[**DcimDeviceTypesBulkDelete**](DcimApi.md#DcimDeviceTypesBulkDelete) | **Delete** /dcim/device-types/ | 
+[**DcimDeviceTypesBulkPartialUpdate**](DcimApi.md#DcimDeviceTypesBulkPartialUpdate) | **Patch** /dcim/device-types/ | 
+[**DcimDeviceTypesBulkUpdate**](DcimApi.md#DcimDeviceTypesBulkUpdate) | **Put** /dcim/device-types/ | 
 [**DcimDeviceTypesCreate**](DcimApi.md#DcimDeviceTypesCreate) | **Post** /dcim/device-types/ | 
 [**DcimDeviceTypesDelete**](DcimApi.md#DcimDeviceTypesDelete) | **Delete** /dcim/device-types/{id}/ | 
 [**DcimDeviceTypesList**](DcimApi.md#DcimDeviceTypesList) | **Get** /dcim/device-types/ | 
 [**DcimDeviceTypesPartialUpdate**](DcimApi.md#DcimDeviceTypesPartialUpdate) | **Patch** /dcim/device-types/{id}/ | 
 [**DcimDeviceTypesRead**](DcimApi.md#DcimDeviceTypesRead) | **Get** /dcim/device-types/{id}/ | 
 [**DcimDeviceTypesUpdate**](DcimApi.md#DcimDeviceTypesUpdate) | **Put** /dcim/device-types/{id}/ | 
+[**DcimDevicesBulkDelete**](DcimApi.md#DcimDevicesBulkDelete) | **Delete** /dcim/devices/ | 
+[**DcimDevicesBulkPartialUpdate**](DcimApi.md#DcimDevicesBulkPartialUpdate) | **Patch** /dcim/devices/ | 
+[**DcimDevicesBulkUpdate**](DcimApi.md#DcimDevicesBulkUpdate) | **Put** /dcim/devices/ | 
 [**DcimDevicesCreate**](DcimApi.md#DcimDevicesCreate) | **Post** /dcim/devices/ | 
 [**DcimDevicesDelete**](DcimApi.md#DcimDevicesDelete) | **Delete** /dcim/devices/{id}/ | 
-[**DcimDevicesGraphs**](DcimApi.md#DcimDevicesGraphs) | **Get** /dcim/devices/{id}/graphs/ | 
 [**DcimDevicesList**](DcimApi.md#DcimDevicesList) | **Get** /dcim/devices/ | 
 [**DcimDevicesNapalm**](DcimApi.md#DcimDevicesNapalm) | **Get** /dcim/devices/{id}/napalm/ | 
 [**DcimDevicesPartialUpdate**](DcimApi.md#DcimDevicesPartialUpdate) | **Patch** /dcim/devices/{id}/ | 
 [**DcimDevicesRead**](DcimApi.md#DcimDevicesRead) | **Get** /dcim/devices/{id}/ | 
 [**DcimDevicesUpdate**](DcimApi.md#DcimDevicesUpdate) | **Put** /dcim/devices/{id}/ | 
+[**DcimFrontPortTemplatesBulkDelete**](DcimApi.md#DcimFrontPortTemplatesBulkDelete) | **Delete** /dcim/front-port-templates/ | 
+[**DcimFrontPortTemplatesBulkPartialUpdate**](DcimApi.md#DcimFrontPortTemplatesBulkPartialUpdate) | **Patch** /dcim/front-port-templates/ | 
+[**DcimFrontPortTemplatesBulkUpdate**](DcimApi.md#DcimFrontPortTemplatesBulkUpdate) | **Put** /dcim/front-port-templates/ | 
 [**DcimFrontPortTemplatesCreate**](DcimApi.md#DcimFrontPortTemplatesCreate) | **Post** /dcim/front-port-templates/ | 
 [**DcimFrontPortTemplatesDelete**](DcimApi.md#DcimFrontPortTemplatesDelete) | **Delete** /dcim/front-port-templates/{id}/ | 
 [**DcimFrontPortTemplatesList**](DcimApi.md#DcimFrontPortTemplatesList) | **Get** /dcim/front-port-templates/ | 
 [**DcimFrontPortTemplatesPartialUpdate**](DcimApi.md#DcimFrontPortTemplatesPartialUpdate) | **Patch** /dcim/front-port-templates/{id}/ | 
 [**DcimFrontPortTemplatesRead**](DcimApi.md#DcimFrontPortTemplatesRead) | **Get** /dcim/front-port-templates/{id}/ | 
 [**DcimFrontPortTemplatesUpdate**](DcimApi.md#DcimFrontPortTemplatesUpdate) | **Put** /dcim/front-port-templates/{id}/ | 
+[**DcimFrontPortsBulkDelete**](DcimApi.md#DcimFrontPortsBulkDelete) | **Delete** /dcim/front-ports/ | 
+[**DcimFrontPortsBulkPartialUpdate**](DcimApi.md#DcimFrontPortsBulkPartialUpdate) | **Patch** /dcim/front-ports/ | 
+[**DcimFrontPortsBulkUpdate**](DcimApi.md#DcimFrontPortsBulkUpdate) | **Put** /dcim/front-ports/ | 
 [**DcimFrontPortsCreate**](DcimApi.md#DcimFrontPortsCreate) | **Post** /dcim/front-ports/ | 
 [**DcimFrontPortsDelete**](DcimApi.md#DcimFrontPortsDelete) | **Delete** /dcim/front-ports/{id}/ | 
 [**DcimFrontPortsList**](DcimApi.md#DcimFrontPortsList) | **Get** /dcim/front-ports/ | 
 [**DcimFrontPortsPartialUpdate**](DcimApi.md#DcimFrontPortsPartialUpdate) | **Patch** /dcim/front-ports/{id}/ | 
+[**DcimFrontPortsPaths**](DcimApi.md#DcimFrontPortsPaths) | **Get** /dcim/front-ports/{id}/paths/ | 
 [**DcimFrontPortsRead**](DcimApi.md#DcimFrontPortsRead) | **Get** /dcim/front-ports/{id}/ | 
 [**DcimFrontPortsUpdate**](DcimApi.md#DcimFrontPortsUpdate) | **Put** /dcim/front-ports/{id}/ | 
 [**DcimInterfaceConnectionsList**](DcimApi.md#DcimInterfaceConnectionsList) | **Get** /dcim/interface-connections/ | 
+[**DcimInterfaceTemplatesBulkDelete**](DcimApi.md#DcimInterfaceTemplatesBulkDelete) | **Delete** /dcim/interface-templates/ | 
+[**DcimInterfaceTemplatesBulkPartialUpdate**](DcimApi.md#DcimInterfaceTemplatesBulkPartialUpdate) | **Patch** /dcim/interface-templates/ | 
+[**DcimInterfaceTemplatesBulkUpdate**](DcimApi.md#DcimInterfaceTemplatesBulkUpdate) | **Put** /dcim/interface-templates/ | 
 [**DcimInterfaceTemplatesCreate**](DcimApi.md#DcimInterfaceTemplatesCreate) | **Post** /dcim/interface-templates/ | 
 [**DcimInterfaceTemplatesDelete**](DcimApi.md#DcimInterfaceTemplatesDelete) | **Delete** /dcim/interface-templates/{id}/ | 
 [**DcimInterfaceTemplatesList**](DcimApi.md#DcimInterfaceTemplatesList) | **Get** /dcim/interface-templates/ | 
 [**DcimInterfaceTemplatesPartialUpdate**](DcimApi.md#DcimInterfaceTemplatesPartialUpdate) | **Patch** /dcim/interface-templates/{id}/ | 
 [**DcimInterfaceTemplatesRead**](DcimApi.md#DcimInterfaceTemplatesRead) | **Get** /dcim/interface-templates/{id}/ | 
 [**DcimInterfaceTemplatesUpdate**](DcimApi.md#DcimInterfaceTemplatesUpdate) | **Put** /dcim/interface-templates/{id}/ | 
+[**DcimInterfacesBulkDelete**](DcimApi.md#DcimInterfacesBulkDelete) | **Delete** /dcim/interfaces/ | 
+[**DcimInterfacesBulkPartialUpdate**](DcimApi.md#DcimInterfacesBulkPartialUpdate) | **Patch** /dcim/interfaces/ | 
+[**DcimInterfacesBulkUpdate**](DcimApi.md#DcimInterfacesBulkUpdate) | **Put** /dcim/interfaces/ | 
 [**DcimInterfacesCreate**](DcimApi.md#DcimInterfacesCreate) | **Post** /dcim/interfaces/ | 
 [**DcimInterfacesDelete**](DcimApi.md#DcimInterfacesDelete) | **Delete** /dcim/interfaces/{id}/ | 
-[**DcimInterfacesGraphs**](DcimApi.md#DcimInterfacesGraphs) | **Get** /dcim/interfaces/{id}/graphs/ | 
 [**DcimInterfacesList**](DcimApi.md#DcimInterfacesList) | **Get** /dcim/interfaces/ | 
 [**DcimInterfacesPartialUpdate**](DcimApi.md#DcimInterfacesPartialUpdate) | **Patch** /dcim/interfaces/{id}/ | 
 [**DcimInterfacesRead**](DcimApi.md#DcimInterfacesRead) | **Get** /dcim/interfaces/{id}/ | 
 [**DcimInterfacesTrace**](DcimApi.md#DcimInterfacesTrace) | **Get** /dcim/interfaces/{id}/trace/ | 
 [**DcimInterfacesUpdate**](DcimApi.md#DcimInterfacesUpdate) | **Put** /dcim/interfaces/{id}/ | 
+[**DcimInventoryItemsBulkDelete**](DcimApi.md#DcimInventoryItemsBulkDelete) | **Delete** /dcim/inventory-items/ | 
+[**DcimInventoryItemsBulkPartialUpdate**](DcimApi.md#DcimInventoryItemsBulkPartialUpdate) | **Patch** /dcim/inventory-items/ | 
+[**DcimInventoryItemsBulkUpdate**](DcimApi.md#DcimInventoryItemsBulkUpdate) | **Put** /dcim/inventory-items/ | 
 [**DcimInventoryItemsCreate**](DcimApi.md#DcimInventoryItemsCreate) | **Post** /dcim/inventory-items/ | 
 [**DcimInventoryItemsDelete**](DcimApi.md#DcimInventoryItemsDelete) | **Delete** /dcim/inventory-items/{id}/ | 
 [**DcimInventoryItemsList**](DcimApi.md#DcimInventoryItemsList) | **Get** /dcim/inventory-items/ | 
 [**DcimInventoryItemsPartialUpdate**](DcimApi.md#DcimInventoryItemsPartialUpdate) | **Patch** /dcim/inventory-items/{id}/ | 
 [**DcimInventoryItemsRead**](DcimApi.md#DcimInventoryItemsRead) | **Get** /dcim/inventory-items/{id}/ | 
 [**DcimInventoryItemsUpdate**](DcimApi.md#DcimInventoryItemsUpdate) | **Put** /dcim/inventory-items/{id}/ | 
+[**DcimLocationsBulkDelete**](DcimApi.md#DcimLocationsBulkDelete) | **Delete** /dcim/locations/ | 
+[**DcimLocationsBulkPartialUpdate**](DcimApi.md#DcimLocationsBulkPartialUpdate) | **Patch** /dcim/locations/ | 
+[**DcimLocationsBulkUpdate**](DcimApi.md#DcimLocationsBulkUpdate) | **Put** /dcim/locations/ | 
+[**DcimLocationsCreate**](DcimApi.md#DcimLocationsCreate) | **Post** /dcim/locations/ | 
+[**DcimLocationsDelete**](DcimApi.md#DcimLocationsDelete) | **Delete** /dcim/locations/{id}/ | 
+[**DcimLocationsList**](DcimApi.md#DcimLocationsList) | **Get** /dcim/locations/ | 
+[**DcimLocationsPartialUpdate**](DcimApi.md#DcimLocationsPartialUpdate) | **Patch** /dcim/locations/{id}/ | 
+[**DcimLocationsRead**](DcimApi.md#DcimLocationsRead) | **Get** /dcim/locations/{id}/ | 
+[**DcimLocationsUpdate**](DcimApi.md#DcimLocationsUpdate) | **Put** /dcim/locations/{id}/ | 
+[**DcimManufacturersBulkDelete**](DcimApi.md#DcimManufacturersBulkDelete) | **Delete** /dcim/manufacturers/ | 
+[**DcimManufacturersBulkPartialUpdate**](DcimApi.md#DcimManufacturersBulkPartialUpdate) | **Patch** /dcim/manufacturers/ | 
+[**DcimManufacturersBulkUpdate**](DcimApi.md#DcimManufacturersBulkUpdate) | **Put** /dcim/manufacturers/ | 
 [**DcimManufacturersCreate**](DcimApi.md#DcimManufacturersCreate) | **Post** /dcim/manufacturers/ | 
 [**DcimManufacturersDelete**](DcimApi.md#DcimManufacturersDelete) | **Delete** /dcim/manufacturers/{id}/ | 
 [**DcimManufacturersList**](DcimApi.md#DcimManufacturersList) | **Get** /dcim/manufacturers/ | 
 [**DcimManufacturersPartialUpdate**](DcimApi.md#DcimManufacturersPartialUpdate) | **Patch** /dcim/manufacturers/{id}/ | 
 [**DcimManufacturersRead**](DcimApi.md#DcimManufacturersRead) | **Get** /dcim/manufacturers/{id}/ | 
 [**DcimManufacturersUpdate**](DcimApi.md#DcimManufacturersUpdate) | **Put** /dcim/manufacturers/{id}/ | 
+[**DcimPlatformsBulkDelete**](DcimApi.md#DcimPlatformsBulkDelete) | **Delete** /dcim/platforms/ | 
+[**DcimPlatformsBulkPartialUpdate**](DcimApi.md#DcimPlatformsBulkPartialUpdate) | **Patch** /dcim/platforms/ | 
+[**DcimPlatformsBulkUpdate**](DcimApi.md#DcimPlatformsBulkUpdate) | **Put** /dcim/platforms/ | 
 [**DcimPlatformsCreate**](DcimApi.md#DcimPlatformsCreate) | **Post** /dcim/platforms/ | 
 [**DcimPlatformsDelete**](DcimApi.md#DcimPlatformsDelete) | **Delete** /dcim/platforms/{id}/ | 
 [**DcimPlatformsList**](DcimApi.md#DcimPlatformsList) | **Get** /dcim/platforms/ | 
@@ -116,18 +175,28 @@ Method | HTTP request | Description
 [**DcimPlatformsRead**](DcimApi.md#DcimPlatformsRead) | **Get** /dcim/platforms/{id}/ | 
 [**DcimPlatformsUpdate**](DcimApi.md#DcimPlatformsUpdate) | **Put** /dcim/platforms/{id}/ | 
 [**DcimPowerConnectionsList**](DcimApi.md#DcimPowerConnectionsList) | **Get** /dcim/power-connections/ | 
+[**DcimPowerFeedsBulkDelete**](DcimApi.md#DcimPowerFeedsBulkDelete) | **Delete** /dcim/power-feeds/ | 
+[**DcimPowerFeedsBulkPartialUpdate**](DcimApi.md#DcimPowerFeedsBulkPartialUpdate) | **Patch** /dcim/power-feeds/ | 
+[**DcimPowerFeedsBulkUpdate**](DcimApi.md#DcimPowerFeedsBulkUpdate) | **Put** /dcim/power-feeds/ | 
 [**DcimPowerFeedsCreate**](DcimApi.md#DcimPowerFeedsCreate) | **Post** /dcim/power-feeds/ | 
 [**DcimPowerFeedsDelete**](DcimApi.md#DcimPowerFeedsDelete) | **Delete** /dcim/power-feeds/{id}/ | 
 [**DcimPowerFeedsList**](DcimApi.md#DcimPowerFeedsList) | **Get** /dcim/power-feeds/ | 
 [**DcimPowerFeedsPartialUpdate**](DcimApi.md#DcimPowerFeedsPartialUpdate) | **Patch** /dcim/power-feeds/{id}/ | 
 [**DcimPowerFeedsRead**](DcimApi.md#DcimPowerFeedsRead) | **Get** /dcim/power-feeds/{id}/ | 
+[**DcimPowerFeedsTrace**](DcimApi.md#DcimPowerFeedsTrace) | **Get** /dcim/power-feeds/{id}/trace/ | 
 [**DcimPowerFeedsUpdate**](DcimApi.md#DcimPowerFeedsUpdate) | **Put** /dcim/power-feeds/{id}/ | 
+[**DcimPowerOutletTemplatesBulkDelete**](DcimApi.md#DcimPowerOutletTemplatesBulkDelete) | **Delete** /dcim/power-outlet-templates/ | 
+[**DcimPowerOutletTemplatesBulkPartialUpdate**](DcimApi.md#DcimPowerOutletTemplatesBulkPartialUpdate) | **Patch** /dcim/power-outlet-templates/ | 
+[**DcimPowerOutletTemplatesBulkUpdate**](DcimApi.md#DcimPowerOutletTemplatesBulkUpdate) | **Put** /dcim/power-outlet-templates/ | 
 [**DcimPowerOutletTemplatesCreate**](DcimApi.md#DcimPowerOutletTemplatesCreate) | **Post** /dcim/power-outlet-templates/ | 
 [**DcimPowerOutletTemplatesDelete**](DcimApi.md#DcimPowerOutletTemplatesDelete) | **Delete** /dcim/power-outlet-templates/{id}/ | 
 [**DcimPowerOutletTemplatesList**](DcimApi.md#DcimPowerOutletTemplatesList) | **Get** /dcim/power-outlet-templates/ | 
 [**DcimPowerOutletTemplatesPartialUpdate**](DcimApi.md#DcimPowerOutletTemplatesPartialUpdate) | **Patch** /dcim/power-outlet-templates/{id}/ | 
 [**DcimPowerOutletTemplatesRead**](DcimApi.md#DcimPowerOutletTemplatesRead) | **Get** /dcim/power-outlet-templates/{id}/ | 
 [**DcimPowerOutletTemplatesUpdate**](DcimApi.md#DcimPowerOutletTemplatesUpdate) | **Put** /dcim/power-outlet-templates/{id}/ | 
+[**DcimPowerOutletsBulkDelete**](DcimApi.md#DcimPowerOutletsBulkDelete) | **Delete** /dcim/power-outlets/ | 
+[**DcimPowerOutletsBulkPartialUpdate**](DcimApi.md#DcimPowerOutletsBulkPartialUpdate) | **Patch** /dcim/power-outlets/ | 
+[**DcimPowerOutletsBulkUpdate**](DcimApi.md#DcimPowerOutletsBulkUpdate) | **Put** /dcim/power-outlets/ | 
 [**DcimPowerOutletsCreate**](DcimApi.md#DcimPowerOutletsCreate) | **Post** /dcim/power-outlets/ | 
 [**DcimPowerOutletsDelete**](DcimApi.md#DcimPowerOutletsDelete) | **Delete** /dcim/power-outlets/{id}/ | 
 [**DcimPowerOutletsList**](DcimApi.md#DcimPowerOutletsList) | **Get** /dcim/power-outlets/ | 
@@ -135,18 +204,27 @@ Method | HTTP request | Description
 [**DcimPowerOutletsRead**](DcimApi.md#DcimPowerOutletsRead) | **Get** /dcim/power-outlets/{id}/ | 
 [**DcimPowerOutletsTrace**](DcimApi.md#DcimPowerOutletsTrace) | **Get** /dcim/power-outlets/{id}/trace/ | 
 [**DcimPowerOutletsUpdate**](DcimApi.md#DcimPowerOutletsUpdate) | **Put** /dcim/power-outlets/{id}/ | 
+[**DcimPowerPanelsBulkDelete**](DcimApi.md#DcimPowerPanelsBulkDelete) | **Delete** /dcim/power-panels/ | 
+[**DcimPowerPanelsBulkPartialUpdate**](DcimApi.md#DcimPowerPanelsBulkPartialUpdate) | **Patch** /dcim/power-panels/ | 
+[**DcimPowerPanelsBulkUpdate**](DcimApi.md#DcimPowerPanelsBulkUpdate) | **Put** /dcim/power-panels/ | 
 [**DcimPowerPanelsCreate**](DcimApi.md#DcimPowerPanelsCreate) | **Post** /dcim/power-panels/ | 
 [**DcimPowerPanelsDelete**](DcimApi.md#DcimPowerPanelsDelete) | **Delete** /dcim/power-panels/{id}/ | 
 [**DcimPowerPanelsList**](DcimApi.md#DcimPowerPanelsList) | **Get** /dcim/power-panels/ | 
 [**DcimPowerPanelsPartialUpdate**](DcimApi.md#DcimPowerPanelsPartialUpdate) | **Patch** /dcim/power-panels/{id}/ | 
 [**DcimPowerPanelsRead**](DcimApi.md#DcimPowerPanelsRead) | **Get** /dcim/power-panels/{id}/ | 
 [**DcimPowerPanelsUpdate**](DcimApi.md#DcimPowerPanelsUpdate) | **Put** /dcim/power-panels/{id}/ | 
+[**DcimPowerPortTemplatesBulkDelete**](DcimApi.md#DcimPowerPortTemplatesBulkDelete) | **Delete** /dcim/power-port-templates/ | 
+[**DcimPowerPortTemplatesBulkPartialUpdate**](DcimApi.md#DcimPowerPortTemplatesBulkPartialUpdate) | **Patch** /dcim/power-port-templates/ | 
+[**DcimPowerPortTemplatesBulkUpdate**](DcimApi.md#DcimPowerPortTemplatesBulkUpdate) | **Put** /dcim/power-port-templates/ | 
 [**DcimPowerPortTemplatesCreate**](DcimApi.md#DcimPowerPortTemplatesCreate) | **Post** /dcim/power-port-templates/ | 
 [**DcimPowerPortTemplatesDelete**](DcimApi.md#DcimPowerPortTemplatesDelete) | **Delete** /dcim/power-port-templates/{id}/ | 
 [**DcimPowerPortTemplatesList**](DcimApi.md#DcimPowerPortTemplatesList) | **Get** /dcim/power-port-templates/ | 
 [**DcimPowerPortTemplatesPartialUpdate**](DcimApi.md#DcimPowerPortTemplatesPartialUpdate) | **Patch** /dcim/power-port-templates/{id}/ | 
 [**DcimPowerPortTemplatesRead**](DcimApi.md#DcimPowerPortTemplatesRead) | **Get** /dcim/power-port-templates/{id}/ | 
 [**DcimPowerPortTemplatesUpdate**](DcimApi.md#DcimPowerPortTemplatesUpdate) | **Put** /dcim/power-port-templates/{id}/ | 
+[**DcimPowerPortsBulkDelete**](DcimApi.md#DcimPowerPortsBulkDelete) | **Delete** /dcim/power-ports/ | 
+[**DcimPowerPortsBulkPartialUpdate**](DcimApi.md#DcimPowerPortsBulkPartialUpdate) | **Patch** /dcim/power-ports/ | 
+[**DcimPowerPortsBulkUpdate**](DcimApi.md#DcimPowerPortsBulkUpdate) | **Put** /dcim/power-ports/ | 
 [**DcimPowerPortsCreate**](DcimApi.md#DcimPowerPortsCreate) | **Post** /dcim/power-ports/ | 
 [**DcimPowerPortsDelete**](DcimApi.md#DcimPowerPortsDelete) | **Delete** /dcim/power-ports/{id}/ | 
 [**DcimPowerPortsList**](DcimApi.md#DcimPowerPortsList) | **Get** /dcim/power-ports/ | 
@@ -154,24 +232,27 @@ Method | HTTP request | Description
 [**DcimPowerPortsRead**](DcimApi.md#DcimPowerPortsRead) | **Get** /dcim/power-ports/{id}/ | 
 [**DcimPowerPortsTrace**](DcimApi.md#DcimPowerPortsTrace) | **Get** /dcim/power-ports/{id}/trace/ | 
 [**DcimPowerPortsUpdate**](DcimApi.md#DcimPowerPortsUpdate) | **Put** /dcim/power-ports/{id}/ | 
-[**DcimRackGroupsCreate**](DcimApi.md#DcimRackGroupsCreate) | **Post** /dcim/rack-groups/ | 
-[**DcimRackGroupsDelete**](DcimApi.md#DcimRackGroupsDelete) | **Delete** /dcim/rack-groups/{id}/ | 
-[**DcimRackGroupsList**](DcimApi.md#DcimRackGroupsList) | **Get** /dcim/rack-groups/ | 
-[**DcimRackGroupsPartialUpdate**](DcimApi.md#DcimRackGroupsPartialUpdate) | **Patch** /dcim/rack-groups/{id}/ | 
-[**DcimRackGroupsRead**](DcimApi.md#DcimRackGroupsRead) | **Get** /dcim/rack-groups/{id}/ | 
-[**DcimRackGroupsUpdate**](DcimApi.md#DcimRackGroupsUpdate) | **Put** /dcim/rack-groups/{id}/ | 
+[**DcimRackReservationsBulkDelete**](DcimApi.md#DcimRackReservationsBulkDelete) | **Delete** /dcim/rack-reservations/ | 
+[**DcimRackReservationsBulkPartialUpdate**](DcimApi.md#DcimRackReservationsBulkPartialUpdate) | **Patch** /dcim/rack-reservations/ | 
+[**DcimRackReservationsBulkUpdate**](DcimApi.md#DcimRackReservationsBulkUpdate) | **Put** /dcim/rack-reservations/ | 
 [**DcimRackReservationsCreate**](DcimApi.md#DcimRackReservationsCreate) | **Post** /dcim/rack-reservations/ | 
 [**DcimRackReservationsDelete**](DcimApi.md#DcimRackReservationsDelete) | **Delete** /dcim/rack-reservations/{id}/ | 
 [**DcimRackReservationsList**](DcimApi.md#DcimRackReservationsList) | **Get** /dcim/rack-reservations/ | 
 [**DcimRackReservationsPartialUpdate**](DcimApi.md#DcimRackReservationsPartialUpdate) | **Patch** /dcim/rack-reservations/{id}/ | 
 [**DcimRackReservationsRead**](DcimApi.md#DcimRackReservationsRead) | **Get** /dcim/rack-reservations/{id}/ | 
 [**DcimRackReservationsUpdate**](DcimApi.md#DcimRackReservationsUpdate) | **Put** /dcim/rack-reservations/{id}/ | 
+[**DcimRackRolesBulkDelete**](DcimApi.md#DcimRackRolesBulkDelete) | **Delete** /dcim/rack-roles/ | 
+[**DcimRackRolesBulkPartialUpdate**](DcimApi.md#DcimRackRolesBulkPartialUpdate) | **Patch** /dcim/rack-roles/ | 
+[**DcimRackRolesBulkUpdate**](DcimApi.md#DcimRackRolesBulkUpdate) | **Put** /dcim/rack-roles/ | 
 [**DcimRackRolesCreate**](DcimApi.md#DcimRackRolesCreate) | **Post** /dcim/rack-roles/ | 
 [**DcimRackRolesDelete**](DcimApi.md#DcimRackRolesDelete) | **Delete** /dcim/rack-roles/{id}/ | 
 [**DcimRackRolesList**](DcimApi.md#DcimRackRolesList) | **Get** /dcim/rack-roles/ | 
 [**DcimRackRolesPartialUpdate**](DcimApi.md#DcimRackRolesPartialUpdate) | **Patch** /dcim/rack-roles/{id}/ | 
 [**DcimRackRolesRead**](DcimApi.md#DcimRackRolesRead) | **Get** /dcim/rack-roles/{id}/ | 
 [**DcimRackRolesUpdate**](DcimApi.md#DcimRackRolesUpdate) | **Put** /dcim/rack-roles/{id}/ | 
+[**DcimRacksBulkDelete**](DcimApi.md#DcimRacksBulkDelete) | **Delete** /dcim/racks/ | 
+[**DcimRacksBulkPartialUpdate**](DcimApi.md#DcimRacksBulkPartialUpdate) | **Patch** /dcim/racks/ | 
+[**DcimRacksBulkUpdate**](DcimApi.md#DcimRacksBulkUpdate) | **Put** /dcim/racks/ | 
 [**DcimRacksCreate**](DcimApi.md#DcimRacksCreate) | **Post** /dcim/racks/ | 
 [**DcimRacksDelete**](DcimApi.md#DcimRacksDelete) | **Delete** /dcim/racks/{id}/ | 
 [**DcimRacksElevation**](DcimApi.md#DcimRacksElevation) | **Get** /dcim/racks/{id}/elevation/ | 
@@ -179,31 +260,55 @@ Method | HTTP request | Description
 [**DcimRacksPartialUpdate**](DcimApi.md#DcimRacksPartialUpdate) | **Patch** /dcim/racks/{id}/ | 
 [**DcimRacksRead**](DcimApi.md#DcimRacksRead) | **Get** /dcim/racks/{id}/ | 
 [**DcimRacksUpdate**](DcimApi.md#DcimRacksUpdate) | **Put** /dcim/racks/{id}/ | 
+[**DcimRearPortTemplatesBulkDelete**](DcimApi.md#DcimRearPortTemplatesBulkDelete) | **Delete** /dcim/rear-port-templates/ | 
+[**DcimRearPortTemplatesBulkPartialUpdate**](DcimApi.md#DcimRearPortTemplatesBulkPartialUpdate) | **Patch** /dcim/rear-port-templates/ | 
+[**DcimRearPortTemplatesBulkUpdate**](DcimApi.md#DcimRearPortTemplatesBulkUpdate) | **Put** /dcim/rear-port-templates/ | 
 [**DcimRearPortTemplatesCreate**](DcimApi.md#DcimRearPortTemplatesCreate) | **Post** /dcim/rear-port-templates/ | 
 [**DcimRearPortTemplatesDelete**](DcimApi.md#DcimRearPortTemplatesDelete) | **Delete** /dcim/rear-port-templates/{id}/ | 
 [**DcimRearPortTemplatesList**](DcimApi.md#DcimRearPortTemplatesList) | **Get** /dcim/rear-port-templates/ | 
 [**DcimRearPortTemplatesPartialUpdate**](DcimApi.md#DcimRearPortTemplatesPartialUpdate) | **Patch** /dcim/rear-port-templates/{id}/ | 
 [**DcimRearPortTemplatesRead**](DcimApi.md#DcimRearPortTemplatesRead) | **Get** /dcim/rear-port-templates/{id}/ | 
 [**DcimRearPortTemplatesUpdate**](DcimApi.md#DcimRearPortTemplatesUpdate) | **Put** /dcim/rear-port-templates/{id}/ | 
+[**DcimRearPortsBulkDelete**](DcimApi.md#DcimRearPortsBulkDelete) | **Delete** /dcim/rear-ports/ | 
+[**DcimRearPortsBulkPartialUpdate**](DcimApi.md#DcimRearPortsBulkPartialUpdate) | **Patch** /dcim/rear-ports/ | 
+[**DcimRearPortsBulkUpdate**](DcimApi.md#DcimRearPortsBulkUpdate) | **Put** /dcim/rear-ports/ | 
 [**DcimRearPortsCreate**](DcimApi.md#DcimRearPortsCreate) | **Post** /dcim/rear-ports/ | 
 [**DcimRearPortsDelete**](DcimApi.md#DcimRearPortsDelete) | **Delete** /dcim/rear-ports/{id}/ | 
 [**DcimRearPortsList**](DcimApi.md#DcimRearPortsList) | **Get** /dcim/rear-ports/ | 
 [**DcimRearPortsPartialUpdate**](DcimApi.md#DcimRearPortsPartialUpdate) | **Patch** /dcim/rear-ports/{id}/ | 
+[**DcimRearPortsPaths**](DcimApi.md#DcimRearPortsPaths) | **Get** /dcim/rear-ports/{id}/paths/ | 
 [**DcimRearPortsRead**](DcimApi.md#DcimRearPortsRead) | **Get** /dcim/rear-ports/{id}/ | 
 [**DcimRearPortsUpdate**](DcimApi.md#DcimRearPortsUpdate) | **Put** /dcim/rear-ports/{id}/ | 
+[**DcimRegionsBulkDelete**](DcimApi.md#DcimRegionsBulkDelete) | **Delete** /dcim/regions/ | 
+[**DcimRegionsBulkPartialUpdate**](DcimApi.md#DcimRegionsBulkPartialUpdate) | **Patch** /dcim/regions/ | 
+[**DcimRegionsBulkUpdate**](DcimApi.md#DcimRegionsBulkUpdate) | **Put** /dcim/regions/ | 
 [**DcimRegionsCreate**](DcimApi.md#DcimRegionsCreate) | **Post** /dcim/regions/ | 
 [**DcimRegionsDelete**](DcimApi.md#DcimRegionsDelete) | **Delete** /dcim/regions/{id}/ | 
 [**DcimRegionsList**](DcimApi.md#DcimRegionsList) | **Get** /dcim/regions/ | 
 [**DcimRegionsPartialUpdate**](DcimApi.md#DcimRegionsPartialUpdate) | **Patch** /dcim/regions/{id}/ | 
 [**DcimRegionsRead**](DcimApi.md#DcimRegionsRead) | **Get** /dcim/regions/{id}/ | 
 [**DcimRegionsUpdate**](DcimApi.md#DcimRegionsUpdate) | **Put** /dcim/regions/{id}/ | 
+[**DcimSiteGroupsBulkDelete**](DcimApi.md#DcimSiteGroupsBulkDelete) | **Delete** /dcim/site-groups/ | 
+[**DcimSiteGroupsBulkPartialUpdate**](DcimApi.md#DcimSiteGroupsBulkPartialUpdate) | **Patch** /dcim/site-groups/ | 
+[**DcimSiteGroupsBulkUpdate**](DcimApi.md#DcimSiteGroupsBulkUpdate) | **Put** /dcim/site-groups/ | 
+[**DcimSiteGroupsCreate**](DcimApi.md#DcimSiteGroupsCreate) | **Post** /dcim/site-groups/ | 
+[**DcimSiteGroupsDelete**](DcimApi.md#DcimSiteGroupsDelete) | **Delete** /dcim/site-groups/{id}/ | 
+[**DcimSiteGroupsList**](DcimApi.md#DcimSiteGroupsList) | **Get** /dcim/site-groups/ | 
+[**DcimSiteGroupsPartialUpdate**](DcimApi.md#DcimSiteGroupsPartialUpdate) | **Patch** /dcim/site-groups/{id}/ | 
+[**DcimSiteGroupsRead**](DcimApi.md#DcimSiteGroupsRead) | **Get** /dcim/site-groups/{id}/ | 
+[**DcimSiteGroupsUpdate**](DcimApi.md#DcimSiteGroupsUpdate) | **Put** /dcim/site-groups/{id}/ | 
+[**DcimSitesBulkDelete**](DcimApi.md#DcimSitesBulkDelete) | **Delete** /dcim/sites/ | 
+[**DcimSitesBulkPartialUpdate**](DcimApi.md#DcimSitesBulkPartialUpdate) | **Patch** /dcim/sites/ | 
+[**DcimSitesBulkUpdate**](DcimApi.md#DcimSitesBulkUpdate) | **Put** /dcim/sites/ | 
 [**DcimSitesCreate**](DcimApi.md#DcimSitesCreate) | **Post** /dcim/sites/ | 
 [**DcimSitesDelete**](DcimApi.md#DcimSitesDelete) | **Delete** /dcim/sites/{id}/ | 
-[**DcimSitesGraphs**](DcimApi.md#DcimSitesGraphs) | **Get** /dcim/sites/{id}/graphs/ | 
 [**DcimSitesList**](DcimApi.md#DcimSitesList) | **Get** /dcim/sites/ | 
 [**DcimSitesPartialUpdate**](DcimApi.md#DcimSitesPartialUpdate) | **Patch** /dcim/sites/{id}/ | 
 [**DcimSitesRead**](DcimApi.md#DcimSitesRead) | **Get** /dcim/sites/{id}/ | 
 [**DcimSitesUpdate**](DcimApi.md#DcimSitesUpdate) | **Put** /dcim/sites/{id}/ | 
+[**DcimVirtualChassisBulkDelete**](DcimApi.md#DcimVirtualChassisBulkDelete) | **Delete** /dcim/virtual-chassis/ | 
+[**DcimVirtualChassisBulkPartialUpdate**](DcimApi.md#DcimVirtualChassisBulkPartialUpdate) | **Patch** /dcim/virtual-chassis/ | 
+[**DcimVirtualChassisBulkUpdate**](DcimApi.md#DcimVirtualChassisBulkUpdate) | **Put** /dcim/virtual-chassis/ | 
 [**DcimVirtualChassisCreate**](DcimApi.md#DcimVirtualChassisCreate) | **Post** /dcim/virtual-chassis/ | 
 [**DcimVirtualChassisDelete**](DcimApi.md#DcimVirtualChassisDelete) | **Delete** /dcim/virtual-chassis/{id}/ | 
 [**DcimVirtualChassisList**](DcimApi.md#DcimVirtualChassisList) | **Get** /dcim/virtual-chassis/ | 
@@ -211,6 +316,86 @@ Method | HTTP request | Description
 [**DcimVirtualChassisRead**](DcimApi.md#DcimVirtualChassisRead) | **Get** /dcim/virtual-chassis/{id}/ | 
 [**DcimVirtualChassisUpdate**](DcimApi.md#DcimVirtualChassisUpdate) | **Put** /dcim/virtual-chassis/{id}/ | 
 
+
+# **DcimCablesBulkDelete**
+> DcimCablesBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimCablesBulkPartialUpdate**
+> Cable DcimCablesBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableCable**](WritableCable.md)|  | 
+
+### Return type
+
+[**Cable**](Cable.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimCablesBulkUpdate**
+> Cable DcimCablesBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableCable**](WritableCable.md)|  | 
+
+### Return type
+
+[**Cable**](Cable.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimCablesCreate**
 > Cable DcimCablesCreate(ctx, data)
@@ -269,10 +454,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimCablesList**
-> InlineResponse2004 DcimCablesList(ctx, optional)
+> InlineResponse2005 DcimCablesList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -290,6 +475,12 @@ Name | Type | Description  | Notes
  **label** | **optional.String**|  | 
  **length** | **optional.String**|  | 
  **lengthUnit** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **type_** | **optional.String**|  | 
  **status** | **optional.String**|  | 
@@ -302,6 +493,7 @@ Name | Type | Description  | Notes
  **site** | **optional.String**|  | 
  **tenantId** | **optional.String**|  | 
  **tenant** | **optional.String**|  | 
+ **tag** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
  **idLt** | **optional.String**|  | 
@@ -325,12 +517,13 @@ Name | Type | Description  | Notes
  **typeN** | **optional.String**|  | 
  **statusN** | **optional.String**|  | 
  **colorN** | **optional.String**|  | 
+ **tagN** | **optional.String**|  | 
  **limit** | **optional.Int32**| Number of results to return per page. | 
  **offset** | **optional.Int32**| The initial index from which to return the results. | 
 
 ### Return type
 
-[**InlineResponse2004**](inline_response_200_4.md)
+[**InlineResponse2005**](inline_response_200_5.md)
 
 ### Authorization
 
@@ -376,7 +569,7 @@ Name | Type | Description  | Notes
 > Cable DcimCablesRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -459,7 +652,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimConsoleConnectionsList**
-> InlineResponse2005 DcimConsoleConnectionsList(ctx, optional)
+> InlineResponse2006 DcimConsoleConnectionsList(ctx, optional)
 
 
 
@@ -477,7 +670,6 @@ Optional parameters are passed through a pointer to a DcimApiDcimConsoleConnecti
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **optional.String**|  | 
- **connectionStatus** | **optional.String**|  | 
  **site** | **optional.String**|  | 
  **deviceId** | **optional.String**|  | 
  **device** | **optional.String**|  | 
@@ -490,13 +682,92 @@ Name | Type | Description  | Notes
  **nameNisw** | **optional.String**|  | 
  **nameIe** | **optional.String**|  | 
  **nameNie** | **optional.String**|  | 
- **connectionStatusN** | **optional.String**|  | 
  **limit** | **optional.Int32**| Number of results to return per page. | 
  **offset** | **optional.Int32**| The initial index from which to return the results. | 
 
 ### Return type
 
-[**InlineResponse2005**](inline_response_200_5.md)
+[**InlineResponse2006**](inline_response_200_6.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimConsolePortTemplatesBulkDelete**
+> DcimConsolePortTemplatesBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimConsolePortTemplatesBulkPartialUpdate**
+> ConsolePortTemplate DcimConsolePortTemplatesBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableConsolePortTemplate**](WritableConsolePortTemplate.md)|  | 
+
+### Return type
+
+[**ConsolePortTemplate**](ConsolePortTemplate.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimConsolePortTemplatesBulkUpdate**
+> ConsolePortTemplate DcimConsolePortTemplatesBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableConsolePortTemplate**](WritableConsolePortTemplate.md)|  | 
+
+### Return type
+
+[**ConsolePortTemplate**](ConsolePortTemplate.md)
 
 ### Authorization
 
@@ -566,10 +837,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimConsolePortTemplatesList**
-> InlineResponse2006 DcimConsolePortTemplatesList(ctx, optional)
+> InlineResponse2007 DcimConsolePortTemplatesList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -586,7 +857,12 @@ Name | Type | Description  | Notes
  **id** | **optional.String**|  | 
  **name** | **optional.String**|  | 
  **type_** | **optional.String**|  | 
- **q** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **devicetypeId** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
@@ -609,7 +885,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2006**](inline_response_200_6.md)
+[**InlineResponse2007**](inline_response_200_7.md)
 
 ### Authorization
 
@@ -655,7 +931,7 @@ Name | Type | Description  | Notes
 > ConsolePortTemplate DcimConsolePortTemplatesRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -696,6 +972,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ConsolePortTemplate**](ConsolePortTemplate.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimConsolePortsBulkDelete**
+> DcimConsolePortsBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimConsolePortsBulkPartialUpdate**
+> ConsolePort DcimConsolePortsBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableConsolePort**](WritableConsolePort.md)|  | 
+
+### Return type
+
+[**ConsolePort**](ConsolePort.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimConsolePortsBulkUpdate**
+> ConsolePort DcimConsolePortsBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableConsolePort**](WritableConsolePort.md)|  | 
+
+### Return type
+
+[**ConsolePort**](ConsolePort.md)
 
 ### Authorization
 
@@ -765,10 +1121,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimConsolePortsList**
-> InlineResponse2005 DcimConsolePortsList(ctx, optional)
+> InlineResponse2006 DcimConsolePortsList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -784,18 +1140,27 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **optional.String**|  | 
  **name** | **optional.String**|  | 
+ **label** | **optional.String**|  | 
  **description** | **optional.String**|  | 
- **connectionStatus** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **regionId** | **optional.String**|  | 
  **region** | **optional.String**|  | 
+ **siteGroupId** | **optional.String**|  | 
+ **siteGroup** | **optional.String**|  | 
  **siteId** | **optional.String**|  | 
  **site** | **optional.String**|  | 
  **deviceId** | **optional.String**|  | 
  **device** | **optional.String**|  | 
  **tag** | **optional.String**|  | 
- **type_** | **optional.String**|  | 
  **cabled** | **optional.String**|  | 
+ **connected** | **optional.String**|  | 
+ **type_** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
  **idLt** | **optional.String**|  | 
@@ -810,6 +1175,15 @@ Name | Type | Description  | Notes
  **nameNisw** | **optional.String**|  | 
  **nameIe** | **optional.String**|  | 
  **nameNie** | **optional.String**|  | 
+ **labelN** | **optional.String**|  | 
+ **labelIc** | **optional.String**|  | 
+ **labelNic** | **optional.String**|  | 
+ **labelIew** | **optional.String**|  | 
+ **labelNiew** | **optional.String**|  | 
+ **labelIsw** | **optional.String**|  | 
+ **labelNisw** | **optional.String**|  | 
+ **labelIe** | **optional.String**|  | 
+ **labelNie** | **optional.String**|  | 
  **descriptionN** | **optional.String**|  | 
  **descriptionIc** | **optional.String**|  | 
  **descriptionNic** | **optional.String**|  | 
@@ -819,9 +1193,10 @@ Name | Type | Description  | Notes
  **descriptionNisw** | **optional.String**|  | 
  **descriptionIe** | **optional.String**|  | 
  **descriptionNie** | **optional.String**|  | 
- **connectionStatusN** | **optional.String**|  | 
  **regionIdN** | **optional.String**|  | 
  **regionN** | **optional.String**|  | 
+ **siteGroupIdN** | **optional.String**|  | 
+ **siteGroupN** | **optional.String**|  | 
  **siteIdN** | **optional.String**|  | 
  **siteN** | **optional.String**|  | 
  **deviceIdN** | **optional.String**|  | 
@@ -833,7 +1208,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2005**](inline_response_200_5.md)
+[**InlineResponse2006**](inline_response_200_6.md)
 
 ### Authorization
 
@@ -879,7 +1254,7 @@ Name | Type | Description  | Notes
 > ConsolePort DcimConsolePortsRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -960,6 +1335,86 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **DcimConsoleServerPortTemplatesBulkDelete**
+> DcimConsoleServerPortTemplatesBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimConsoleServerPortTemplatesBulkPartialUpdate**
+> ConsoleServerPortTemplate DcimConsoleServerPortTemplatesBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableConsoleServerPortTemplate**](WritableConsoleServerPortTemplate.md)|  | 
+
+### Return type
+
+[**ConsoleServerPortTemplate**](ConsoleServerPortTemplate.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimConsoleServerPortTemplatesBulkUpdate**
+> ConsoleServerPortTemplate DcimConsoleServerPortTemplatesBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableConsoleServerPortTemplate**](WritableConsoleServerPortTemplate.md)|  | 
+
+### Return type
+
+[**ConsoleServerPortTemplate**](ConsoleServerPortTemplate.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **DcimConsoleServerPortTemplatesCreate**
 > ConsoleServerPortTemplate DcimConsoleServerPortTemplatesCreate(ctx, data)
 
@@ -1017,10 +1472,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimConsoleServerPortTemplatesList**
-> InlineResponse2007 DcimConsoleServerPortTemplatesList(ctx, optional)
+> InlineResponse2008 DcimConsoleServerPortTemplatesList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -1037,7 +1492,12 @@ Name | Type | Description  | Notes
  **id** | **optional.String**|  | 
  **name** | **optional.String**|  | 
  **type_** | **optional.String**|  | 
- **q** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **devicetypeId** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
@@ -1060,7 +1520,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2007**](inline_response_200_7.md)
+[**InlineResponse2008**](inline_response_200_8.md)
 
 ### Authorization
 
@@ -1106,7 +1566,7 @@ Name | Type | Description  | Notes
 > ConsoleServerPortTemplate DcimConsoleServerPortTemplatesRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -1147,6 +1607,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ConsoleServerPortTemplate**](ConsoleServerPortTemplate.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimConsoleServerPortsBulkDelete**
+> DcimConsoleServerPortsBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimConsoleServerPortsBulkPartialUpdate**
+> ConsoleServerPort DcimConsoleServerPortsBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableConsoleServerPort**](WritableConsoleServerPort.md)|  | 
+
+### Return type
+
+[**ConsoleServerPort**](ConsoleServerPort.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimConsoleServerPortsBulkUpdate**
+> ConsoleServerPort DcimConsoleServerPortsBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableConsoleServerPort**](WritableConsoleServerPort.md)|  | 
+
+### Return type
+
+[**ConsoleServerPort**](ConsoleServerPort.md)
 
 ### Authorization
 
@@ -1216,10 +1756,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimConsoleServerPortsList**
-> InlineResponse2008 DcimConsoleServerPortsList(ctx, optional)
+> InlineResponse2009 DcimConsoleServerPortsList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -1235,18 +1775,27 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **optional.String**|  | 
  **name** | **optional.String**|  | 
+ **label** | **optional.String**|  | 
  **description** | **optional.String**|  | 
- **connectionStatus** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **regionId** | **optional.String**|  | 
  **region** | **optional.String**|  | 
+ **siteGroupId** | **optional.String**|  | 
+ **siteGroup** | **optional.String**|  | 
  **siteId** | **optional.String**|  | 
  **site** | **optional.String**|  | 
  **deviceId** | **optional.String**|  | 
  **device** | **optional.String**|  | 
  **tag** | **optional.String**|  | 
- **type_** | **optional.String**|  | 
  **cabled** | **optional.String**|  | 
+ **connected** | **optional.String**|  | 
+ **type_** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
  **idLt** | **optional.String**|  | 
@@ -1261,6 +1810,15 @@ Name | Type | Description  | Notes
  **nameNisw** | **optional.String**|  | 
  **nameIe** | **optional.String**|  | 
  **nameNie** | **optional.String**|  | 
+ **labelN** | **optional.String**|  | 
+ **labelIc** | **optional.String**|  | 
+ **labelNic** | **optional.String**|  | 
+ **labelIew** | **optional.String**|  | 
+ **labelNiew** | **optional.String**|  | 
+ **labelIsw** | **optional.String**|  | 
+ **labelNisw** | **optional.String**|  | 
+ **labelIe** | **optional.String**|  | 
+ **labelNie** | **optional.String**|  | 
  **descriptionN** | **optional.String**|  | 
  **descriptionIc** | **optional.String**|  | 
  **descriptionNic** | **optional.String**|  | 
@@ -1270,9 +1828,10 @@ Name | Type | Description  | Notes
  **descriptionNisw** | **optional.String**|  | 
  **descriptionIe** | **optional.String**|  | 
  **descriptionNie** | **optional.String**|  | 
- **connectionStatusN** | **optional.String**|  | 
  **regionIdN** | **optional.String**|  | 
  **regionN** | **optional.String**|  | 
+ **siteGroupIdN** | **optional.String**|  | 
+ **siteGroupN** | **optional.String**|  | 
  **siteIdN** | **optional.String**|  | 
  **siteN** | **optional.String**|  | 
  **deviceIdN** | **optional.String**|  | 
@@ -1284,7 +1843,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2008**](inline_response_200_8.md)
+[**InlineResponse2009**](inline_response_200_9.md)
 
 ### Authorization
 
@@ -1330,7 +1889,7 @@ Name | Type | Description  | Notes
 > ConsoleServerPort DcimConsoleServerPortsRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -1411,6 +1970,86 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **DcimDeviceBayTemplatesBulkDelete**
+> DcimDeviceBayTemplatesBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimDeviceBayTemplatesBulkPartialUpdate**
+> DeviceBayTemplate DcimDeviceBayTemplatesBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableDeviceBayTemplate**](WritableDeviceBayTemplate.md)|  | 
+
+### Return type
+
+[**DeviceBayTemplate**](DeviceBayTemplate.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimDeviceBayTemplatesBulkUpdate**
+> DeviceBayTemplate DcimDeviceBayTemplatesBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableDeviceBayTemplate**](WritableDeviceBayTemplate.md)|  | 
+
+### Return type
+
+[**DeviceBayTemplate**](DeviceBayTemplate.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **DcimDeviceBayTemplatesCreate**
 > DeviceBayTemplate DcimDeviceBayTemplatesCreate(ctx, data)
 
@@ -1468,10 +2107,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimDeviceBayTemplatesList**
-> InlineResponse2009 DcimDeviceBayTemplatesList(ctx, optional)
+> InlineResponse20010 DcimDeviceBayTemplatesList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -1487,7 +2126,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **optional.String**|  | 
  **name** | **optional.String**|  | 
- **q** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **devicetypeId** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
@@ -1509,7 +2153,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2009**](inline_response_200_9.md)
+[**InlineResponse20010**](inline_response_200_10.md)
 
 ### Authorization
 
@@ -1555,7 +2199,7 @@ Name | Type | Description  | Notes
 > DeviceBayTemplate DcimDeviceBayTemplatesRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -1596,6 +2240,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**DeviceBayTemplate**](DeviceBayTemplate.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimDeviceBaysBulkDelete**
+> DcimDeviceBaysBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimDeviceBaysBulkPartialUpdate**
+> DeviceBay DcimDeviceBaysBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableDeviceBay**](WritableDeviceBay.md)|  | 
+
+### Return type
+
+[**DeviceBay**](DeviceBay.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimDeviceBaysBulkUpdate**
+> DeviceBay DcimDeviceBaysBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableDeviceBay**](WritableDeviceBay.md)|  | 
+
+### Return type
+
+[**DeviceBay**](DeviceBay.md)
 
 ### Authorization
 
@@ -1665,10 +2389,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimDeviceBaysList**
-> InlineResponse20010 DcimDeviceBaysList(ctx, optional)
+> InlineResponse20011 DcimDeviceBaysList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -1684,10 +2408,19 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **optional.String**|  | 
  **name** | **optional.String**|  | 
+ **label** | **optional.String**|  | 
  **description** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **regionId** | **optional.String**|  | 
  **region** | **optional.String**|  | 
+ **siteGroupId** | **optional.String**|  | 
+ **siteGroup** | **optional.String**|  | 
  **siteId** | **optional.String**|  | 
  **site** | **optional.String**|  | 
  **deviceId** | **optional.String**|  | 
@@ -1707,6 +2440,15 @@ Name | Type | Description  | Notes
  **nameNisw** | **optional.String**|  | 
  **nameIe** | **optional.String**|  | 
  **nameNie** | **optional.String**|  | 
+ **labelN** | **optional.String**|  | 
+ **labelIc** | **optional.String**|  | 
+ **labelNic** | **optional.String**|  | 
+ **labelIew** | **optional.String**|  | 
+ **labelNiew** | **optional.String**|  | 
+ **labelIsw** | **optional.String**|  | 
+ **labelNisw** | **optional.String**|  | 
+ **labelIe** | **optional.String**|  | 
+ **labelNie** | **optional.String**|  | 
  **descriptionN** | **optional.String**|  | 
  **descriptionIc** | **optional.String**|  | 
  **descriptionNic** | **optional.String**|  | 
@@ -1718,6 +2460,8 @@ Name | Type | Description  | Notes
  **descriptionNie** | **optional.String**|  | 
  **regionIdN** | **optional.String**|  | 
  **regionN** | **optional.String**|  | 
+ **siteGroupIdN** | **optional.String**|  | 
+ **siteGroupN** | **optional.String**|  | 
  **siteIdN** | **optional.String**|  | 
  **siteN** | **optional.String**|  | 
  **deviceIdN** | **optional.String**|  | 
@@ -1728,7 +2472,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20010**](inline_response_200_10.md)
+[**InlineResponse20011**](inline_response_200_11.md)
 
 ### Authorization
 
@@ -1774,7 +2518,7 @@ Name | Type | Description  | Notes
 > DeviceBay DcimDeviceBaysRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -1815,6 +2559,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**DeviceBay**](DeviceBay.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimDeviceRolesBulkDelete**
+> DcimDeviceRolesBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimDeviceRolesBulkPartialUpdate**
+> DeviceRole DcimDeviceRolesBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**DeviceRole**](DeviceRole.md)|  | 
+
+### Return type
+
+[**DeviceRole**](DeviceRole.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimDeviceRolesBulkUpdate**
+> DeviceRole DcimDeviceRolesBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**DeviceRole**](DeviceRole.md)|  | 
+
+### Return type
+
+[**DeviceRole**](DeviceRole.md)
 
 ### Authorization
 
@@ -1884,10 +2708,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimDeviceRolesList**
-> InlineResponse20011 DcimDeviceRolesList(ctx, optional)
+> InlineResponse20012 DcimDeviceRolesList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -1906,6 +2730,12 @@ Name | Type | Description  | Notes
  **slug** | **optional.String**|  | 
  **color** | **optional.String**|  | 
  **vmRole** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
@@ -1944,7 +2774,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20011**](inline_response_200_11.md)
+[**InlineResponse20012**](inline_response_200_12.md)
 
 ### Authorization
 
@@ -1990,7 +2820,7 @@ Name | Type | Description  | Notes
 > DeviceRole DcimDeviceRolesRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -2031,6 +2861,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**DeviceRole**](DeviceRole.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimDeviceTypesBulkDelete**
+> DcimDeviceTypesBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimDeviceTypesBulkPartialUpdate**
+> DeviceType DcimDeviceTypesBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableDeviceType**](WritableDeviceType.md)|  | 
+
+### Return type
+
+[**DeviceType**](DeviceType.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimDeviceTypesBulkUpdate**
+> DeviceType DcimDeviceTypesBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableDeviceType**](WritableDeviceType.md)|  | 
+
+### Return type
+
+[**DeviceType**](DeviceType.md)
 
 ### Authorization
 
@@ -2100,10 +3010,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimDeviceTypesList**
-> InlineResponse20012 DcimDeviceTypesList(ctx, optional)
+> InlineResponse20013 DcimDeviceTypesList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -2187,7 +3097,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20012**](inline_response_200_12.md)
+[**InlineResponse20013**](inline_response_200_13.md)
 
 ### Authorization
 
@@ -2233,7 +3143,7 @@ Name | Type | Description  | Notes
 > DeviceType DcimDeviceTypesRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -2274,6 +3184,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**DeviceType**](DeviceType.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimDevicesBulkDelete**
+> DcimDevicesBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimDevicesBulkPartialUpdate**
+> DeviceWithConfigContext DcimDevicesBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableDeviceWithConfigContext**](WritableDeviceWithConfigContext.md)|  | 
+
+### Return type
+
+[**DeviceWithConfigContext**](DeviceWithConfigContext.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimDevicesBulkUpdate**
+> DeviceWithConfigContext DcimDevicesBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableDeviceWithConfigContext**](WritableDeviceWithConfigContext.md)|  | 
+
+### Return type
+
+[**DeviceWithConfigContext**](DeviceWithConfigContext.md)
 
 ### Authorization
 
@@ -2342,39 +3332,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DcimDevicesGraphs**
-> DeviceWithConfigContext DcimDevicesGraphs(ctx, id)
-
-
-A convenience method for rendering graphs for a particular Device.
-
-### Required Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **id** | **int32**| A unique integer value identifying this device. | 
-
-### Return type
-
-[**DeviceWithConfigContext**](DeviceWithConfigContext.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **DcimDevicesList**
-> InlineResponse20013 DcimDevicesList(ctx, optional)
+> InlineResponse20014 DcimDevicesList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -2395,17 +3357,17 @@ Name | Type | Description  | Notes
  **position** | **optional.String**|  | 
  **vcPosition** | **optional.String**|  | 
  **vcPriority** | **optional.String**|  | 
- **tenantGroupId** | **optional.String**|  | 
- **tenantGroup** | **optional.String**|  | 
- **tenantId** | **optional.String**|  | 
- **tenant** | **optional.String**|  | 
- **localContextData** | **optional.String**|  | 
  **created** | **optional.String**|  | 
  **createdGte** | **optional.String**|  | 
  **createdLte** | **optional.String**|  | 
  **lastUpdated** | **optional.String**|  | 
  **lastUpdatedGte** | **optional.String**|  | 
  **lastUpdatedLte** | **optional.String**|  | 
+ **tenantGroupId** | **optional.String**|  | 
+ **tenantGroup** | **optional.String**|  | 
+ **tenantId** | **optional.String**|  | 
+ **tenant** | **optional.String**|  | 
+ **localContextData** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **manufacturerId** | **optional.String**|  | 
  **manufacturer** | **optional.String**|  | 
@@ -2416,9 +3378,11 @@ Name | Type | Description  | Notes
  **platform** | **optional.String**|  | 
  **regionId** | **optional.String**|  | 
  **region** | **optional.String**|  | 
+ **siteGroupId** | **optional.String**|  | 
+ **siteGroup** | **optional.String**|  | 
  **siteId** | **optional.String**|  | 
  **site** | **optional.String**|  | 
- **rackGroupId** | **optional.String**|  | 
+ **locationId** | **optional.String**|  | 
  **rackId** | **optional.String**|  | 
  **clusterId** | **optional.String**|  | 
  **model** | **optional.String**|  | 
@@ -2489,9 +3453,11 @@ Name | Type | Description  | Notes
  **platformN** | **optional.String**|  | 
  **regionIdN** | **optional.String**|  | 
  **regionN** | **optional.String**|  | 
+ **siteGroupIdN** | **optional.String**|  | 
+ **siteGroupN** | **optional.String**|  | 
  **siteIdN** | **optional.String**|  | 
  **siteN** | **optional.String**|  | 
- **rackGroupIdN** | **optional.String**|  | 
+ **locationIdN** | **optional.String**|  | 
  **rackIdN** | **optional.String**|  | 
  **clusterIdN** | **optional.String**|  | 
  **modelN** | **optional.String**|  | 
@@ -2512,7 +3478,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20013**](inline_response_200_13.md)
+[**InlineResponse20014**](inline_response_200_14.md)
 
 ### Authorization
 
@@ -2587,7 +3553,7 @@ Name | Type | Description  | Notes
 > DeviceWithConfigContext DcimDevicesRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -2628,6 +3594,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**DeviceWithConfigContext**](DeviceWithConfigContext.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimFrontPortTemplatesBulkDelete**
+> DcimFrontPortTemplatesBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimFrontPortTemplatesBulkPartialUpdate**
+> FrontPortTemplate DcimFrontPortTemplatesBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableFrontPortTemplate**](WritableFrontPortTemplate.md)|  | 
+
+### Return type
+
+[**FrontPortTemplate**](FrontPortTemplate.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimFrontPortTemplatesBulkUpdate**
+> FrontPortTemplate DcimFrontPortTemplatesBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableFrontPortTemplate**](WritableFrontPortTemplate.md)|  | 
+
+### Return type
+
+[**FrontPortTemplate**](FrontPortTemplate.md)
 
 ### Authorization
 
@@ -2697,10 +3743,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimFrontPortTemplatesList**
-> InlineResponse20014 DcimFrontPortTemplatesList(ctx, optional)
+> InlineResponse20015 DcimFrontPortTemplatesList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -2717,7 +3763,12 @@ Name | Type | Description  | Notes
  **id** | **optional.String**|  | 
  **name** | **optional.String**|  | 
  **type_** | **optional.String**|  | 
- **q** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **devicetypeId** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
@@ -2740,7 +3791,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20014**](inline_response_200_14.md)
+[**InlineResponse20015**](inline_response_200_15.md)
 
 ### Authorization
 
@@ -2786,7 +3837,7 @@ Name | Type | Description  | Notes
 > FrontPortTemplate DcimFrontPortTemplatesRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -2827,6 +3878,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**FrontPortTemplate**](FrontPortTemplate.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimFrontPortsBulkDelete**
+> DcimFrontPortsBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimFrontPortsBulkPartialUpdate**
+> FrontPort DcimFrontPortsBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableFrontPort**](WritableFrontPort.md)|  | 
+
+### Return type
+
+[**FrontPort**](FrontPort.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimFrontPortsBulkUpdate**
+> FrontPort DcimFrontPortsBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableFrontPort**](WritableFrontPort.md)|  | 
+
+### Return type
+
+[**FrontPort**](FrontPort.md)
 
 ### Authorization
 
@@ -2896,10 +4027,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimFrontPortsList**
-> InlineResponse20015 DcimFrontPortsList(ctx, optional)
+> InlineResponse20016 DcimFrontPortsList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -2915,11 +4046,20 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **optional.String**|  | 
  **name** | **optional.String**|  | 
+ **label** | **optional.String**|  | 
  **type_** | **optional.String**|  | 
  **description** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **regionId** | **optional.String**|  | 
  **region** | **optional.String**|  | 
+ **siteGroupId** | **optional.String**|  | 
+ **siteGroup** | **optional.String**|  | 
  **siteId** | **optional.String**|  | 
  **site** | **optional.String**|  | 
  **deviceId** | **optional.String**|  | 
@@ -2940,6 +4080,15 @@ Name | Type | Description  | Notes
  **nameNisw** | **optional.String**|  | 
  **nameIe** | **optional.String**|  | 
  **nameNie** | **optional.String**|  | 
+ **labelN** | **optional.String**|  | 
+ **labelIc** | **optional.String**|  | 
+ **labelNic** | **optional.String**|  | 
+ **labelIew** | **optional.String**|  | 
+ **labelNiew** | **optional.String**|  | 
+ **labelIsw** | **optional.String**|  | 
+ **labelNisw** | **optional.String**|  | 
+ **labelIe** | **optional.String**|  | 
+ **labelNie** | **optional.String**|  | 
  **typeN** | **optional.String**|  | 
  **descriptionN** | **optional.String**|  | 
  **descriptionIc** | **optional.String**|  | 
@@ -2952,6 +4101,8 @@ Name | Type | Description  | Notes
  **descriptionNie** | **optional.String**|  | 
  **regionIdN** | **optional.String**|  | 
  **regionN** | **optional.String**|  | 
+ **siteGroupIdN** | **optional.String**|  | 
+ **siteGroupN** | **optional.String**|  | 
  **siteIdN** | **optional.String**|  | 
  **siteN** | **optional.String**|  | 
  **deviceIdN** | **optional.String**|  | 
@@ -2962,7 +4113,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20015**](inline_response_200_15.md)
+[**InlineResponse20016**](inline_response_200_16.md)
 
 ### Authorization
 
@@ -3004,11 +4155,39 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **DcimFrontPortsPaths**
+> FrontPort DcimFrontPortsPaths(ctx, id)
+
+
+Return all CablePaths which traverse a given pass-through port.
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **id** | **int32**| A unique integer value identifying this front port. | 
+
+### Return type
+
+[**FrontPort**](FrontPort.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **DcimFrontPortsRead**
 > FrontPort DcimFrontPortsRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -3062,7 +4241,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimInterfaceConnectionsList**
-> InlineResponse20016 DcimInterfaceConnectionsList(ctx, optional)
+> InlineResponse20017 DcimInterfaceConnectionsList(ctx, optional)
 
 
 
@@ -3079,17 +4258,95 @@ Optional parameters are passed through a pointer to a DcimApiDcimInterfaceConnec
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **connectionStatus** | **optional.String**|  | 
  **site** | **optional.String**|  | 
  **deviceId** | **optional.String**|  | 
  **device** | **optional.String**|  | 
- **connectionStatusN** | **optional.String**|  | 
  **limit** | **optional.Int32**| Number of results to return per page. | 
  **offset** | **optional.Int32**| The initial index from which to return the results. | 
 
 ### Return type
 
-[**InlineResponse20016**](inline_response_200_16.md)
+[**InlineResponse20017**](inline_response_200_17.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimInterfaceTemplatesBulkDelete**
+> DcimInterfaceTemplatesBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimInterfaceTemplatesBulkPartialUpdate**
+> InterfaceTemplate DcimInterfaceTemplatesBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableInterfaceTemplate**](WritableInterfaceTemplate.md)|  | 
+
+### Return type
+
+[**InterfaceTemplate**](InterfaceTemplate.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimInterfaceTemplatesBulkUpdate**
+> InterfaceTemplate DcimInterfaceTemplatesBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableInterfaceTemplate**](WritableInterfaceTemplate.md)|  | 
+
+### Return type
+
+[**InterfaceTemplate**](InterfaceTemplate.md)
 
 ### Authorization
 
@@ -3159,10 +4416,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimInterfaceTemplatesList**
-> InlineResponse20017 DcimInterfaceTemplatesList(ctx, optional)
+> InlineResponse20018 DcimInterfaceTemplatesList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -3180,7 +4437,12 @@ Name | Type | Description  | Notes
  **name** | **optional.String**|  | 
  **type_** | **optional.String**|  | 
  **mgmtOnly** | **optional.String**|  | 
- **q** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **devicetypeId** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
@@ -3203,7 +4465,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20017**](inline_response_200_17.md)
+[**InlineResponse20018**](inline_response_200_18.md)
 
 ### Authorization
 
@@ -3249,7 +4511,7 @@ Name | Type | Description  | Notes
 > InterfaceTemplate DcimInterfaceTemplatesRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -3302,8 +4564,32 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DcimInterfacesCreate**
-> DeviceInterface DcimInterfacesCreate(ctx, data)
+# **DcimInterfacesBulkDelete**
+> DcimInterfacesBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimInterfacesBulkPartialUpdate**
+> ModelInterface DcimInterfacesBulkPartialUpdate(ctx, data)
 
 
 
@@ -3313,11 +4599,67 @@ Name | Type | Description  | Notes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **data** | [**WritableDeviceInterface**](WritableDeviceInterface.md)|  | 
+  **data** | [**WritableInterface**](WritableInterface.md)|  | 
 
 ### Return type
 
-[**DeviceInterface**](DeviceInterface.md)
+[**ModelInterface**](Interface.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimInterfacesBulkUpdate**
+> ModelInterface DcimInterfacesBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableInterface**](WritableInterface.md)|  | 
+
+### Return type
+
+[**ModelInterface**](Interface.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimInterfacesCreate**
+> ModelInterface DcimInterfacesCreate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableInterface**](WritableInterface.md)|  | 
+
+### Return type
+
+[**ModelInterface**](Interface.md)
 
 ### Authorization
 
@@ -3358,39 +4700,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DcimInterfacesGraphs**
-> DeviceInterface DcimInterfacesGraphs(ctx, id)
-
-
-A convenience method for rendering graphs for a particular interface.
-
-### Required Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **id** | **int32**| A unique integer value identifying this interface. | 
-
-### Return type
-
-[**DeviceInterface**](DeviceInterface.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **DcimInterfacesList**
-> InlineResponse20018 DcimInterfacesList(ctx, optional)
+> InlineResponse20019 DcimInterfacesList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -3406,23 +4720,33 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **optional.String**|  | 
  **name** | **optional.String**|  | 
- **connectionStatus** | **optional.String**|  | 
+ **label** | **optional.String**|  | 
  **type_** | **optional.String**|  | 
  **enabled** | **optional.String**|  | 
  **mtu** | **optional.String**|  | 
  **mgmtOnly** | **optional.String**|  | 
  **mode** | **optional.String**|  | 
  **description** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **regionId** | **optional.String**|  | 
  **region** | **optional.String**|  | 
+ **siteGroupId** | **optional.String**|  | 
+ **siteGroup** | **optional.String**|  | 
  **siteId** | **optional.String**|  | 
  **site** | **optional.String**|  | 
  **deviceId** | **optional.String**|  | 
  **device** | **optional.String**|  | 
  **tag** | **optional.String**|  | 
  **cabled** | **optional.String**|  | 
+ **connected** | **optional.String**|  | 
  **kind** | **optional.String**|  | 
+ **parentId** | **optional.String**|  | 
  **lagId** | **optional.String**|  | 
  **macAddress** | **optional.String**|  | 
  **vlanId** | **optional.String**|  | 
@@ -3441,7 +4765,15 @@ Name | Type | Description  | Notes
  **nameNisw** | **optional.String**|  | 
  **nameIe** | **optional.String**|  | 
  **nameNie** | **optional.String**|  | 
- **connectionStatusN** | **optional.String**|  | 
+ **labelN** | **optional.String**|  | 
+ **labelIc** | **optional.String**|  | 
+ **labelNic** | **optional.String**|  | 
+ **labelIew** | **optional.String**|  | 
+ **labelNiew** | **optional.String**|  | 
+ **labelIsw** | **optional.String**|  | 
+ **labelNisw** | **optional.String**|  | 
+ **labelIe** | **optional.String**|  | 
+ **labelNie** | **optional.String**|  | 
  **typeN** | **optional.String**|  | 
  **mtuN** | **optional.String**|  | 
  **mtuLte** | **optional.String**|  | 
@@ -3460,9 +4792,12 @@ Name | Type | Description  | Notes
  **descriptionNie** | **optional.String**|  | 
  **regionIdN** | **optional.String**|  | 
  **regionN** | **optional.String**|  | 
+ **siteGroupIdN** | **optional.String**|  | 
+ **siteGroupN** | **optional.String**|  | 
  **siteIdN** | **optional.String**|  | 
  **siteN** | **optional.String**|  | 
  **tagN** | **optional.String**|  | 
+ **parentIdN** | **optional.String**|  | 
  **lagIdN** | **optional.String**|  | 
  **macAddressN** | **optional.String**|  | 
  **macAddressIc** | **optional.String**|  | 
@@ -3478,7 +4813,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20018**](inline_response_200_18.md)
+[**InlineResponse20019**](inline_response_200_19.md)
 
 ### Authorization
 
@@ -3492,7 +4827,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimInterfacesPartialUpdate**
-> DeviceInterface DcimInterfacesPartialUpdate(ctx, id, data)
+> ModelInterface DcimInterfacesPartialUpdate(ctx, id, data)
 
 
 
@@ -3503,11 +4838,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **id** | **int32**| A unique integer value identifying this interface. | 
-  **data** | [**WritableDeviceInterface**](WritableDeviceInterface.md)|  | 
+  **data** | [**WritableInterface**](WritableInterface.md)|  | 
 
 ### Return type
 
-[**DeviceInterface**](DeviceInterface.md)
+[**ModelInterface**](Interface.md)
 
 ### Authorization
 
@@ -3521,10 +4856,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimInterfacesRead**
-> DeviceInterface DcimInterfacesRead(ctx, id)
+> ModelInterface DcimInterfacesRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -3535,7 +4870,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**DeviceInterface**](DeviceInterface.md)
+[**ModelInterface**](Interface.md)
 
 ### Authorization
 
@@ -3549,7 +4884,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimInterfacesTrace**
-> DeviceInterface DcimInterfacesTrace(ctx, id)
+> ModelInterface DcimInterfacesTrace(ctx, id)
 
 
 Trace a complete cable path and return each segment as a three-tuple of (termination, cable, termination).
@@ -3563,7 +4898,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**DeviceInterface**](DeviceInterface.md)
+[**ModelInterface**](Interface.md)
 
 ### Authorization
 
@@ -3577,7 +4912,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimInterfacesUpdate**
-> DeviceInterface DcimInterfacesUpdate(ctx, id, data)
+> ModelInterface DcimInterfacesUpdate(ctx, id, data)
 
 
 
@@ -3588,11 +4923,91 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **id** | **int32**| A unique integer value identifying this interface. | 
-  **data** | [**WritableDeviceInterface**](WritableDeviceInterface.md)|  | 
+  **data** | [**WritableInterface**](WritableInterface.md)|  | 
 
 ### Return type
 
-[**DeviceInterface**](DeviceInterface.md)
+[**ModelInterface**](Interface.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimInventoryItemsBulkDelete**
+> DcimInventoryItemsBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimInventoryItemsBulkPartialUpdate**
+> InventoryItem DcimInventoryItemsBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableInventoryItem**](WritableInventoryItem.md)|  | 
+
+### Return type
+
+[**InventoryItem**](InventoryItem.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimInventoryItemsBulkUpdate**
+> InventoryItem DcimInventoryItemsBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableInventoryItem**](WritableInventoryItem.md)|  | 
+
+### Return type
+
+[**InventoryItem**](InventoryItem.md)
 
 ### Authorization
 
@@ -3662,10 +5077,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimInventoryItemsList**
-> InlineResponse20019 DcimInventoryItemsList(ctx, optional)
+> InlineResponse20020 DcimInventoryItemsList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -3681,12 +5096,21 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **optional.String**|  | 
  **name** | **optional.String**|  | 
+ **label** | **optional.String**|  | 
  **partId** | **optional.String**|  | 
  **assetTag** | **optional.String**|  | 
  **discovered** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **regionId** | **optional.String**|  | 
  **region** | **optional.String**|  | 
+ **siteGroupId** | **optional.String**|  | 
+ **siteGroup** | **optional.String**|  | 
  **siteId** | **optional.String**|  | 
  **site** | **optional.String**|  | 
  **deviceId** | **optional.String**|  | 
@@ -3710,6 +5134,15 @@ Name | Type | Description  | Notes
  **nameNisw** | **optional.String**|  | 
  **nameIe** | **optional.String**|  | 
  **nameNie** | **optional.String**|  | 
+ **labelN** | **optional.String**|  | 
+ **labelIc** | **optional.String**|  | 
+ **labelNic** | **optional.String**|  | 
+ **labelIew** | **optional.String**|  | 
+ **labelNiew** | **optional.String**|  | 
+ **labelIsw** | **optional.String**|  | 
+ **labelNisw** | **optional.String**|  | 
+ **labelIe** | **optional.String**|  | 
+ **labelNie** | **optional.String**|  | 
  **partIdN** | **optional.String**|  | 
  **partIdIc** | **optional.String**|  | 
  **partIdNic** | **optional.String**|  | 
@@ -3730,6 +5163,8 @@ Name | Type | Description  | Notes
  **assetTagNie** | **optional.String**|  | 
  **regionIdN** | **optional.String**|  | 
  **regionN** | **optional.String**|  | 
+ **siteGroupIdN** | **optional.String**|  | 
+ **siteGroupN** | **optional.String**|  | 
  **siteIdN** | **optional.String**|  | 
  **siteN** | **optional.String**|  | 
  **deviceIdN** | **optional.String**|  | 
@@ -3743,7 +5178,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20019**](inline_response_200_19.md)
+[**InlineResponse20020**](inline_response_200_20.md)
 
 ### Authorization
 
@@ -3789,7 +5224,7 @@ Name | Type | Description  | Notes
 > InventoryItem DcimInventoryItemsRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -3830,6 +5265,403 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InventoryItem**](InventoryItem.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimLocationsBulkDelete**
+> DcimLocationsBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimLocationsBulkPartialUpdate**
+> Location DcimLocationsBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableLocation**](WritableLocation.md)|  | 
+
+### Return type
+
+[**Location**](Location.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimLocationsBulkUpdate**
+> Location DcimLocationsBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableLocation**](WritableLocation.md)|  | 
+
+### Return type
+
+[**Location**](Location.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimLocationsCreate**
+> Location DcimLocationsCreate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableLocation**](WritableLocation.md)|  | 
+
+### Return type
+
+[**Location**](Location.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimLocationsDelete**
+> DcimLocationsDelete(ctx, id)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **id** | **int32**| A unique integer value identifying this location. | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimLocationsList**
+> InlineResponse20021 DcimLocationsList(ctx, optional)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+ **optional** | ***DcimApiDcimLocationsListOpts** | optional parameters | nil if no parameters
+
+### Optional Parameters
+Optional parameters are passed through a pointer to a DcimApiDcimLocationsListOpts struct
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **optional.String**|  | 
+ **name** | **optional.String**|  | 
+ **slug** | **optional.String**|  | 
+ **description** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
+ **q** | **optional.String**|  | 
+ **regionId** | **optional.String**|  | 
+ **region** | **optional.String**|  | 
+ **siteGroupId** | **optional.String**|  | 
+ **siteGroup** | **optional.String**|  | 
+ **siteId** | **optional.String**|  | 
+ **site** | **optional.String**|  | 
+ **parentId** | **optional.String**|  | 
+ **parent** | **optional.String**|  | 
+ **idN** | **optional.String**|  | 
+ **idLte** | **optional.String**|  | 
+ **idLt** | **optional.String**|  | 
+ **idGte** | **optional.String**|  | 
+ **idGt** | **optional.String**|  | 
+ **nameN** | **optional.String**|  | 
+ **nameIc** | **optional.String**|  | 
+ **nameNic** | **optional.String**|  | 
+ **nameIew** | **optional.String**|  | 
+ **nameNiew** | **optional.String**|  | 
+ **nameIsw** | **optional.String**|  | 
+ **nameNisw** | **optional.String**|  | 
+ **nameIe** | **optional.String**|  | 
+ **nameNie** | **optional.String**|  | 
+ **slugN** | **optional.String**|  | 
+ **slugIc** | **optional.String**|  | 
+ **slugNic** | **optional.String**|  | 
+ **slugIew** | **optional.String**|  | 
+ **slugNiew** | **optional.String**|  | 
+ **slugIsw** | **optional.String**|  | 
+ **slugNisw** | **optional.String**|  | 
+ **slugIe** | **optional.String**|  | 
+ **slugNie** | **optional.String**|  | 
+ **descriptionN** | **optional.String**|  | 
+ **descriptionIc** | **optional.String**|  | 
+ **descriptionNic** | **optional.String**|  | 
+ **descriptionIew** | **optional.String**|  | 
+ **descriptionNiew** | **optional.String**|  | 
+ **descriptionIsw** | **optional.String**|  | 
+ **descriptionNisw** | **optional.String**|  | 
+ **descriptionIe** | **optional.String**|  | 
+ **descriptionNie** | **optional.String**|  | 
+ **regionIdN** | **optional.String**|  | 
+ **regionN** | **optional.String**|  | 
+ **siteGroupIdN** | **optional.String**|  | 
+ **siteGroupN** | **optional.String**|  | 
+ **siteIdN** | **optional.String**|  | 
+ **siteN** | **optional.String**|  | 
+ **parentIdN** | **optional.String**|  | 
+ **parentN** | **optional.String**|  | 
+ **limit** | **optional.Int32**| Number of results to return per page. | 
+ **offset** | **optional.Int32**| The initial index from which to return the results. | 
+
+### Return type
+
+[**InlineResponse20021**](inline_response_200_21.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimLocationsPartialUpdate**
+> Location DcimLocationsPartialUpdate(ctx, id, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **id** | **int32**| A unique integer value identifying this location. | 
+  **data** | [**WritableLocation**](WritableLocation.md)|  | 
+
+### Return type
+
+[**Location**](Location.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimLocationsRead**
+> Location DcimLocationsRead(ctx, id)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **id** | **int32**| A unique integer value identifying this location. | 
+
+### Return type
+
+[**Location**](Location.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimLocationsUpdate**
+> Location DcimLocationsUpdate(ctx, id, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **id** | **int32**| A unique integer value identifying this location. | 
+  **data** | [**WritableLocation**](WritableLocation.md)|  | 
+
+### Return type
+
+[**Location**](Location.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimManufacturersBulkDelete**
+> DcimManufacturersBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimManufacturersBulkPartialUpdate**
+> Manufacturer DcimManufacturersBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**Manufacturer**](Manufacturer.md)|  | 
+
+### Return type
+
+[**Manufacturer**](Manufacturer.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimManufacturersBulkUpdate**
+> Manufacturer DcimManufacturersBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**Manufacturer**](Manufacturer.md)|  | 
+
+### Return type
+
+[**Manufacturer**](Manufacturer.md)
 
 ### Authorization
 
@@ -3899,10 +5731,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimManufacturersList**
-> InlineResponse20020 DcimManufacturersList(ctx, optional)
+> InlineResponse20022 DcimManufacturersList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -3920,6 +5752,12 @@ Name | Type | Description  | Notes
  **name** | **optional.String**|  | 
  **slug** | **optional.String**|  | 
  **description** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
@@ -3958,7 +5796,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20020**](inline_response_200_20.md)
+[**InlineResponse20022**](inline_response_200_22.md)
 
 ### Authorization
 
@@ -4004,7 +5842,7 @@ Name | Type | Description  | Notes
 > Manufacturer DcimManufacturersRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -4045,6 +5883,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Manufacturer**](Manufacturer.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPlatformsBulkDelete**
+> DcimPlatformsBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPlatformsBulkPartialUpdate**
+> Platform DcimPlatformsBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritablePlatform**](WritablePlatform.md)|  | 
+
+### Return type
+
+[**Platform**](Platform.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPlatformsBulkUpdate**
+> Platform DcimPlatformsBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritablePlatform**](WritablePlatform.md)|  | 
+
+### Return type
+
+[**Platform**](Platform.md)
 
 ### Authorization
 
@@ -4114,10 +6032,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimPlatformsList**
-> InlineResponse20021 DcimPlatformsList(ctx, optional)
+> InlineResponse20023 DcimPlatformsList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -4136,6 +6054,12 @@ Name | Type | Description  | Notes
  **slug** | **optional.String**|  | 
  **napalmDriver** | **optional.String**|  | 
  **description** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **manufacturerId** | **optional.String**|  | 
  **manufacturer** | **optional.String**|  | 
@@ -4187,7 +6111,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20021**](inline_response_200_21.md)
+[**InlineResponse20023**](inline_response_200_23.md)
 
 ### Authorization
 
@@ -4233,7 +6157,7 @@ Name | Type | Description  | Notes
 > Platform DcimPlatformsRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -4287,7 +6211,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimPowerConnectionsList**
-> InlineResponse20022 DcimPowerConnectionsList(ctx, optional)
+> InlineResponse20024 DcimPowerConnectionsList(ctx, optional)
 
 
 
@@ -4305,7 +6229,6 @@ Optional parameters are passed through a pointer to a DcimApiDcimPowerConnection
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **optional.String**|  | 
- **connectionStatus** | **optional.String**|  | 
  **site** | **optional.String**|  | 
  **deviceId** | **optional.String**|  | 
  **device** | **optional.String**|  | 
@@ -4318,13 +6241,92 @@ Name | Type | Description  | Notes
  **nameNisw** | **optional.String**|  | 
  **nameIe** | **optional.String**|  | 
  **nameNie** | **optional.String**|  | 
- **connectionStatusN** | **optional.String**|  | 
  **limit** | **optional.Int32**| Number of results to return per page. | 
  **offset** | **optional.Int32**| The initial index from which to return the results. | 
 
 ### Return type
 
-[**InlineResponse20022**](inline_response_200_22.md)
+[**InlineResponse20024**](inline_response_200_24.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPowerFeedsBulkDelete**
+> DcimPowerFeedsBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPowerFeedsBulkPartialUpdate**
+> PowerFeed DcimPowerFeedsBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritablePowerFeed**](WritablePowerFeed.md)|  | 
+
+### Return type
+
+[**PowerFeed**](PowerFeed.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPowerFeedsBulkUpdate**
+> PowerFeed DcimPowerFeedsBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritablePowerFeed**](WritablePowerFeed.md)|  | 
+
+### Return type
+
+[**PowerFeed**](PowerFeed.md)
 
 ### Authorization
 
@@ -4394,10 +6396,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimPowerFeedsList**
-> InlineResponse20023 DcimPowerFeedsList(ctx, optional)
+> InlineResponse20025 DcimPowerFeedsList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -4426,9 +6428,13 @@ Name | Type | Description  | Notes
  **lastUpdated** | **optional.String**|  | 
  **lastUpdatedGte** | **optional.String**|  | 
  **lastUpdatedLte** | **optional.String**|  | 
+ **cabled** | **optional.String**|  | 
+ **connected** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **regionId** | **optional.String**|  | 
  **region** | **optional.String**|  | 
+ **siteGroupId** | **optional.String**|  | 
+ **siteGroup** | **optional.String**|  | 
  **siteId** | **optional.String**|  | 
  **site** | **optional.String**|  | 
  **powerPanelId** | **optional.String**|  | 
@@ -4469,6 +6475,8 @@ Name | Type | Description  | Notes
  **maxUtilizationGt** | **optional.String**|  | 
  **regionIdN** | **optional.String**|  | 
  **regionN** | **optional.String**|  | 
+ **siteGroupIdN** | **optional.String**|  | 
+ **siteGroupN** | **optional.String**|  | 
  **siteIdN** | **optional.String**|  | 
  **siteN** | **optional.String**|  | 
  **powerPanelIdN** | **optional.String**|  | 
@@ -4479,7 +6487,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20023**](inline_response_200_23.md)
+[**InlineResponse20025**](inline_response_200_25.md)
 
 ### Authorization
 
@@ -4525,7 +6533,35 @@ Name | Type | Description  | Notes
 > PowerFeed DcimPowerFeedsRead(ctx, id)
 
 
-Call to super to allow for caching
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **id** | **int32**| A unique integer value identifying this power feed. | 
+
+### Return type
+
+[**PowerFeed**](PowerFeed.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPowerFeedsTrace**
+> PowerFeed DcimPowerFeedsTrace(ctx, id)
+
+
+Trace a complete cable path and return each segment as a three-tuple of (termination, cable, termination).
 
 ### Required Parameters
 
@@ -4566,6 +6602,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**PowerFeed**](PowerFeed.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPowerOutletTemplatesBulkDelete**
+> DcimPowerOutletTemplatesBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPowerOutletTemplatesBulkPartialUpdate**
+> PowerOutletTemplate DcimPowerOutletTemplatesBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritablePowerOutletTemplate**](WritablePowerOutletTemplate.md)|  | 
+
+### Return type
+
+[**PowerOutletTemplate**](PowerOutletTemplate.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPowerOutletTemplatesBulkUpdate**
+> PowerOutletTemplate DcimPowerOutletTemplatesBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritablePowerOutletTemplate**](WritablePowerOutletTemplate.md)|  | 
+
+### Return type
+
+[**PowerOutletTemplate**](PowerOutletTemplate.md)
 
 ### Authorization
 
@@ -4635,10 +6751,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimPowerOutletTemplatesList**
-> InlineResponse20024 DcimPowerOutletTemplatesList(ctx, optional)
+> InlineResponse20026 DcimPowerOutletTemplatesList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -4656,7 +6772,12 @@ Name | Type | Description  | Notes
  **name** | **optional.String**|  | 
  **type_** | **optional.String**|  | 
  **feedLeg** | **optional.String**|  | 
- **q** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **devicetypeId** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
@@ -4680,7 +6801,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20024**](inline_response_200_24.md)
+[**InlineResponse20026**](inline_response_200_26.md)
 
 ### Authorization
 
@@ -4726,7 +6847,7 @@ Name | Type | Description  | Notes
 > PowerOutletTemplate DcimPowerOutletTemplatesRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -4767,6 +6888,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**PowerOutletTemplate**](PowerOutletTemplate.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPowerOutletsBulkDelete**
+> DcimPowerOutletsBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPowerOutletsBulkPartialUpdate**
+> PowerOutlet DcimPowerOutletsBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritablePowerOutlet**](WritablePowerOutlet.md)|  | 
+
+### Return type
+
+[**PowerOutlet**](PowerOutlet.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPowerOutletsBulkUpdate**
+> PowerOutlet DcimPowerOutletsBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritablePowerOutlet**](WritablePowerOutlet.md)|  | 
+
+### Return type
+
+[**PowerOutlet**](PowerOutlet.md)
 
 ### Authorization
 
@@ -4836,10 +7037,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimPowerOutletsList**
-> InlineResponse20025 DcimPowerOutletsList(ctx, optional)
+> InlineResponse20027 DcimPowerOutletsList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -4855,19 +7056,28 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **optional.String**|  | 
  **name** | **optional.String**|  | 
+ **label** | **optional.String**|  | 
  **feedLeg** | **optional.String**|  | 
  **description** | **optional.String**|  | 
- **connectionStatus** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **regionId** | **optional.String**|  | 
  **region** | **optional.String**|  | 
+ **siteGroupId** | **optional.String**|  | 
+ **siteGroup** | **optional.String**|  | 
  **siteId** | **optional.String**|  | 
  **site** | **optional.String**|  | 
  **deviceId** | **optional.String**|  | 
  **device** | **optional.String**|  | 
  **tag** | **optional.String**|  | 
- **type_** | **optional.String**|  | 
  **cabled** | **optional.String**|  | 
+ **connected** | **optional.String**|  | 
+ **type_** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
  **idLt** | **optional.String**|  | 
@@ -4882,6 +7092,15 @@ Name | Type | Description  | Notes
  **nameNisw** | **optional.String**|  | 
  **nameIe** | **optional.String**|  | 
  **nameNie** | **optional.String**|  | 
+ **labelN** | **optional.String**|  | 
+ **labelIc** | **optional.String**|  | 
+ **labelNic** | **optional.String**|  | 
+ **labelIew** | **optional.String**|  | 
+ **labelNiew** | **optional.String**|  | 
+ **labelIsw** | **optional.String**|  | 
+ **labelNisw** | **optional.String**|  | 
+ **labelIe** | **optional.String**|  | 
+ **labelNie** | **optional.String**|  | 
  **feedLegN** | **optional.String**|  | 
  **descriptionN** | **optional.String**|  | 
  **descriptionIc** | **optional.String**|  | 
@@ -4892,9 +7111,10 @@ Name | Type | Description  | Notes
  **descriptionNisw** | **optional.String**|  | 
  **descriptionIe** | **optional.String**|  | 
  **descriptionNie** | **optional.String**|  | 
- **connectionStatusN** | **optional.String**|  | 
  **regionIdN** | **optional.String**|  | 
  **regionN** | **optional.String**|  | 
+ **siteGroupIdN** | **optional.String**|  | 
+ **siteGroupN** | **optional.String**|  | 
  **siteIdN** | **optional.String**|  | 
  **siteN** | **optional.String**|  | 
  **deviceIdN** | **optional.String**|  | 
@@ -4906,7 +7126,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20025**](inline_response_200_25.md)
+[**InlineResponse20027**](inline_response_200_27.md)
 
 ### Authorization
 
@@ -4952,7 +7172,7 @@ Name | Type | Description  | Notes
 > PowerOutlet DcimPowerOutletsRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -5033,6 +7253,86 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **DcimPowerPanelsBulkDelete**
+> DcimPowerPanelsBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPowerPanelsBulkPartialUpdate**
+> PowerPanel DcimPowerPanelsBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritablePowerPanel**](WritablePowerPanel.md)|  | 
+
+### Return type
+
+[**PowerPanel**](PowerPanel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPowerPanelsBulkUpdate**
+> PowerPanel DcimPowerPanelsBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritablePowerPanel**](WritablePowerPanel.md)|  | 
+
+### Return type
+
+[**PowerPanel**](PowerPanel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **DcimPowerPanelsCreate**
 > PowerPanel DcimPowerPanelsCreate(ctx, data)
 
@@ -5090,10 +7390,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimPowerPanelsList**
-> InlineResponse20026 DcimPowerPanelsList(ctx, optional)
+> InlineResponse20028 DcimPowerPanelsList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -5109,12 +7409,21 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **optional.String**|  | 
  **name** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **regionId** | **optional.String**|  | 
  **region** | **optional.String**|  | 
+ **siteGroupId** | **optional.String**|  | 
+ **siteGroup** | **optional.String**|  | 
  **siteId** | **optional.String**|  | 
  **site** | **optional.String**|  | 
- **rackGroupId** | **optional.String**|  | 
+ **locationId** | **optional.String**|  | 
+ **tag** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
  **idLt** | **optional.String**|  | 
@@ -5131,15 +7440,18 @@ Name | Type | Description  | Notes
  **nameNie** | **optional.String**|  | 
  **regionIdN** | **optional.String**|  | 
  **regionN** | **optional.String**|  | 
+ **siteGroupIdN** | **optional.String**|  | 
+ **siteGroupN** | **optional.String**|  | 
  **siteIdN** | **optional.String**|  | 
  **siteN** | **optional.String**|  | 
- **rackGroupIdN** | **optional.String**|  | 
+ **locationIdN** | **optional.String**|  | 
+ **tagN** | **optional.String**|  | 
  **limit** | **optional.Int32**| Number of results to return per page. | 
  **offset** | **optional.Int32**| The initial index from which to return the results. | 
 
 ### Return type
 
-[**InlineResponse20026**](inline_response_200_26.md)
+[**InlineResponse20028**](inline_response_200_28.md)
 
 ### Authorization
 
@@ -5185,7 +7497,7 @@ Name | Type | Description  | Notes
 > PowerPanel DcimPowerPanelsRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -5226,6 +7538,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**PowerPanel**](PowerPanel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPowerPortTemplatesBulkDelete**
+> DcimPowerPortTemplatesBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPowerPortTemplatesBulkPartialUpdate**
+> PowerPortTemplate DcimPowerPortTemplatesBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritablePowerPortTemplate**](WritablePowerPortTemplate.md)|  | 
+
+### Return type
+
+[**PowerPortTemplate**](PowerPortTemplate.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPowerPortTemplatesBulkUpdate**
+> PowerPortTemplate DcimPowerPortTemplatesBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritablePowerPortTemplate**](WritablePowerPortTemplate.md)|  | 
+
+### Return type
+
+[**PowerPortTemplate**](PowerPortTemplate.md)
 
 ### Authorization
 
@@ -5295,10 +7687,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimPowerPortTemplatesList**
-> InlineResponse20027 DcimPowerPortTemplatesList(ctx, optional)
+> InlineResponse20029 DcimPowerPortTemplatesList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -5317,7 +7709,12 @@ Name | Type | Description  | Notes
  **type_** | **optional.String**|  | 
  **maximumDraw** | **optional.String**|  | 
  **allocatedDraw** | **optional.String**|  | 
- **q** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **devicetypeId** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
@@ -5350,7 +7747,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20027**](inline_response_200_27.md)
+[**InlineResponse20029**](inline_response_200_29.md)
 
 ### Authorization
 
@@ -5396,7 +7793,7 @@ Name | Type | Description  | Notes
 > PowerPortTemplate DcimPowerPortTemplatesRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -5437,6 +7834,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**PowerPortTemplate**](PowerPortTemplate.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPowerPortsBulkDelete**
+> DcimPowerPortsBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPowerPortsBulkPartialUpdate**
+> PowerPort DcimPowerPortsBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritablePowerPort**](WritablePowerPort.md)|  | 
+
+### Return type
+
+[**PowerPort**](PowerPort.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimPowerPortsBulkUpdate**
+> PowerPort DcimPowerPortsBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritablePowerPort**](WritablePowerPort.md)|  | 
+
+### Return type
+
+[**PowerPort**](PowerPort.md)
 
 ### Authorization
 
@@ -5506,10 +7983,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimPowerPortsList**
-> InlineResponse20022 DcimPowerPortsList(ctx, optional)
+> InlineResponse20024 DcimPowerPortsList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -5525,20 +8002,29 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **optional.String**|  | 
  **name** | **optional.String**|  | 
+ **label** | **optional.String**|  | 
  **maximumDraw** | **optional.String**|  | 
  **allocatedDraw** | **optional.String**|  | 
  **description** | **optional.String**|  | 
- **connectionStatus** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **regionId** | **optional.String**|  | 
  **region** | **optional.String**|  | 
+ **siteGroupId** | **optional.String**|  | 
+ **siteGroup** | **optional.String**|  | 
  **siteId** | **optional.String**|  | 
  **site** | **optional.String**|  | 
  **deviceId** | **optional.String**|  | 
  **device** | **optional.String**|  | 
  **tag** | **optional.String**|  | 
- **type_** | **optional.String**|  | 
  **cabled** | **optional.String**|  | 
+ **connected** | **optional.String**|  | 
+ **type_** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
  **idLt** | **optional.String**|  | 
@@ -5553,6 +8039,15 @@ Name | Type | Description  | Notes
  **nameNisw** | **optional.String**|  | 
  **nameIe** | **optional.String**|  | 
  **nameNie** | **optional.String**|  | 
+ **labelN** | **optional.String**|  | 
+ **labelIc** | **optional.String**|  | 
+ **labelNic** | **optional.String**|  | 
+ **labelIew** | **optional.String**|  | 
+ **labelNiew** | **optional.String**|  | 
+ **labelIsw** | **optional.String**|  | 
+ **labelNisw** | **optional.String**|  | 
+ **labelIe** | **optional.String**|  | 
+ **labelNie** | **optional.String**|  | 
  **maximumDrawN** | **optional.String**|  | 
  **maximumDrawLte** | **optional.String**|  | 
  **maximumDrawLt** | **optional.String**|  | 
@@ -5572,9 +8067,10 @@ Name | Type | Description  | Notes
  **descriptionNisw** | **optional.String**|  | 
  **descriptionIe** | **optional.String**|  | 
  **descriptionNie** | **optional.String**|  | 
- **connectionStatusN** | **optional.String**|  | 
  **regionIdN** | **optional.String**|  | 
  **regionN** | **optional.String**|  | 
+ **siteGroupIdN** | **optional.String**|  | 
+ **siteGroupN** | **optional.String**|  | 
  **siteIdN** | **optional.String**|  | 
  **siteN** | **optional.String**|  | 
  **deviceIdN** | **optional.String**|  | 
@@ -5586,7 +8082,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20022**](inline_response_200_22.md)
+[**InlineResponse20024**](inline_response_200_24.md)
 
 ### Authorization
 
@@ -5632,7 +8128,7 @@ Name | Type | Description  | Notes
 > PowerPort DcimPowerPortsRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -5713,46 +8209,14 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DcimRackGroupsCreate**
-> RackGroup DcimRackGroupsCreate(ctx, data)
+# **DcimRackReservationsBulkDelete**
+> DcimRackReservationsBulkDelete(ctx, )
 
 
 
 
 ### Required Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **data** | [**WritableRackGroup**](WritableRackGroup.md)|  | 
-
-### Return type
-
-[**RackGroup**](RackGroup.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **DcimRackGroupsDelete**
-> DcimRackGroupsDelete(ctx, id)
-
-
-
-
-### Required Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **id** | **int32**| A unique integer value identifying this rack group. | 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -5769,79 +8233,22 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DcimRackGroupsList**
-> InlineResponse20028 DcimRackGroupsList(ctx, optional)
+# **DcimRackReservationsBulkPartialUpdate**
+> RackReservation DcimRackReservationsBulkPartialUpdate(ctx, data)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***DcimApiDcimRackGroupsListOpts** | optional parameters | nil if no parameters
-
-### Optional Parameters
-Optional parameters are passed through a pointer to a DcimApiDcimRackGroupsListOpts struct
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **optional.String**|  | 
- **name** | **optional.String**|  | 
- **slug** | **optional.String**|  | 
- **description** | **optional.String**|  | 
- **q** | **optional.String**|  | 
- **regionId** | **optional.String**|  | 
- **region** | **optional.String**|  | 
- **siteId** | **optional.String**|  | 
- **site** | **optional.String**|  | 
- **parentId** | **optional.String**|  | 
- **parent** | **optional.String**|  | 
- **idN** | **optional.String**|  | 
- **idLte** | **optional.String**|  | 
- **idLt** | **optional.String**|  | 
- **idGte** | **optional.String**|  | 
- **idGt** | **optional.String**|  | 
- **nameN** | **optional.String**|  | 
- **nameIc** | **optional.String**|  | 
- **nameNic** | **optional.String**|  | 
- **nameIew** | **optional.String**|  | 
- **nameNiew** | **optional.String**|  | 
- **nameIsw** | **optional.String**|  | 
- **nameNisw** | **optional.String**|  | 
- **nameIe** | **optional.String**|  | 
- **nameNie** | **optional.String**|  | 
- **slugN** | **optional.String**|  | 
- **slugIc** | **optional.String**|  | 
- **slugNic** | **optional.String**|  | 
- **slugIew** | **optional.String**|  | 
- **slugNiew** | **optional.String**|  | 
- **slugIsw** | **optional.String**|  | 
- **slugNisw** | **optional.String**|  | 
- **slugIe** | **optional.String**|  | 
- **slugNie** | **optional.String**|  | 
- **descriptionN** | **optional.String**|  | 
- **descriptionIc** | **optional.String**|  | 
- **descriptionNic** | **optional.String**|  | 
- **descriptionIew** | **optional.String**|  | 
- **descriptionNiew** | **optional.String**|  | 
- **descriptionIsw** | **optional.String**|  | 
- **descriptionNisw** | **optional.String**|  | 
- **descriptionIe** | **optional.String**|  | 
- **descriptionNie** | **optional.String**|  | 
- **regionIdN** | **optional.String**|  | 
- **regionN** | **optional.String**|  | 
- **siteIdN** | **optional.String**|  | 
- **siteN** | **optional.String**|  | 
- **parentIdN** | **optional.String**|  | 
- **parentN** | **optional.String**|  | 
- **limit** | **optional.Int32**| Number of results to return per page. | 
- **offset** | **optional.Int32**| The initial index from which to return the results. | 
+  **data** | [**WritableRackReservation**](WritableRackReservation.md)|  | 
 
 ### Return type
 
-[**InlineResponse20028**](inline_response_200_28.md)
+[**RackReservation**](RackReservation.md)
 
 ### Authorization
 
@@ -5854,8 +8261,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DcimRackGroupsPartialUpdate**
-> RackGroup DcimRackGroupsPartialUpdate(ctx, id, data)
+# **DcimRackReservationsBulkUpdate**
+> RackReservation DcimRackReservationsBulkUpdate(ctx, data)
 
 
 
@@ -5865,69 +8272,11 @@ Name | Type | Description  | Notes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **id** | **int32**| A unique integer value identifying this rack group. | 
-  **data** | [**WritableRackGroup**](WritableRackGroup.md)|  | 
+  **data** | [**WritableRackReservation**](WritableRackReservation.md)|  | 
 
 ### Return type
 
-[**RackGroup**](RackGroup.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **DcimRackGroupsRead**
-> RackGroup DcimRackGroupsRead(ctx, id)
-
-
-Call to super to allow for caching
-
-### Required Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **id** | **int32**| A unique integer value identifying this rack group. | 
-
-### Return type
-
-[**RackGroup**](RackGroup.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **DcimRackGroupsUpdate**
-> RackGroup DcimRackGroupsUpdate(ctx, id, data)
-
-
-
-
-### Required Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **id** | **int32**| A unique integer value identifying this rack group. | 
-  **data** | [**WritableRackGroup**](WritableRackGroup.md)|  | 
-
-### Return type
-
-[**RackGroup**](RackGroup.md)
+[**RackReservation**](RackReservation.md)
 
 ### Authorization
 
@@ -5997,10 +8346,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimRackReservationsList**
-> InlineResponse20029 DcimRackReservationsList(ctx, optional)
+> InlineResponse20030 DcimRackReservationsList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -6016,6 +8365,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **optional.String**|  | 
  **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **tenantGroupId** | **optional.String**|  | 
  **tenantGroup** | **optional.String**|  | 
  **tenantId** | **optional.String**|  | 
@@ -6024,20 +8378,16 @@ Name | Type | Description  | Notes
  **rackId** | **optional.String**|  | 
  **siteId** | **optional.String**|  | 
  **site** | **optional.String**|  | 
- **groupId** | **optional.String**|  | 
- **group** | **optional.String**|  | 
+ **locationId** | **optional.String**|  | 
+ **location** | **optional.String**|  | 
  **userId** | **optional.String**|  | 
  **user** | **optional.String**|  | 
+ **tag** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
  **idLt** | **optional.String**|  | 
  **idGte** | **optional.String**|  | 
  **idGt** | **optional.String**|  | 
- **createdN** | **optional.String**|  | 
- **createdLte** | **optional.String**|  | 
- **createdLt** | **optional.String**|  | 
- **createdGte** | **optional.String**|  | 
- **createdGt** | **optional.String**|  | 
  **tenantGroupIdN** | **optional.String**|  | 
  **tenantGroupN** | **optional.String**|  | 
  **tenantIdN** | **optional.String**|  | 
@@ -6045,16 +8395,17 @@ Name | Type | Description  | Notes
  **rackIdN** | **optional.String**|  | 
  **siteIdN** | **optional.String**|  | 
  **siteN** | **optional.String**|  | 
- **groupIdN** | **optional.String**|  | 
- **groupN** | **optional.String**|  | 
+ **locationIdN** | **optional.String**|  | 
+ **locationN** | **optional.String**|  | 
  **userIdN** | **optional.String**|  | 
  **userN** | **optional.String**|  | 
+ **tagN** | **optional.String**|  | 
  **limit** | **optional.Int32**| Number of results to return per page. | 
  **offset** | **optional.Int32**| The initial index from which to return the results. | 
 
 ### Return type
 
-[**InlineResponse20029**](inline_response_200_29.md)
+[**InlineResponse20030**](inline_response_200_30.md)
 
 ### Authorization
 
@@ -6100,7 +8451,7 @@ Name | Type | Description  | Notes
 > RackReservation DcimRackReservationsRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -6141,6 +8492,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**RackReservation**](RackReservation.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimRackRolesBulkDelete**
+> DcimRackRolesBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimRackRolesBulkPartialUpdate**
+> RackRole DcimRackRolesBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**RackRole**](RackRole.md)|  | 
+
+### Return type
+
+[**RackRole**](RackRole.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimRackRolesBulkUpdate**
+> RackRole DcimRackRolesBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**RackRole**](RackRole.md)|  | 
+
+### Return type
+
+[**RackRole**](RackRole.md)
 
 ### Authorization
 
@@ -6210,10 +8641,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimRackRolesList**
-> InlineResponse20030 DcimRackRolesList(ctx, optional)
+> InlineResponse20031 DcimRackRolesList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -6231,6 +8662,12 @@ Name | Type | Description  | Notes
  **name** | **optional.String**|  | 
  **slug** | **optional.String**|  | 
  **color** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
@@ -6269,7 +8706,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20030**](inline_response_200_30.md)
+[**InlineResponse20031**](inline_response_200_31.md)
 
 ### Authorization
 
@@ -6315,7 +8752,7 @@ Name | Type | Description  | Notes
 > RackRole DcimRackRolesRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -6356,6 +8793,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**RackRole**](RackRole.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimRacksBulkDelete**
+> DcimRacksBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimRacksBulkPartialUpdate**
+> Rack DcimRacksBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableRack**](WritableRack.md)|  | 
+
+### Return type
+
+[**Rack**](Rack.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimRacksBulkUpdate**
+> Rack DcimRacksBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableRack**](WritableRack.md)|  | 
+
+### Return type
+
+[**Rack**](Rack.md)
 
 ### Authorization
 
@@ -6470,10 +8987,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimRacksList**
-> InlineResponse20031 DcimRacksList(ctx, optional)
+> InlineResponse20032 DcimRacksList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -6491,31 +9008,33 @@ Name | Type | Description  | Notes
  **name** | **optional.String**|  | 
  **facilityId** | **optional.String**|  | 
  **assetTag** | **optional.String**|  | 
- **type_** | **optional.String**|  | 
- **width** | **optional.String**|  | 
  **uHeight** | **optional.String**|  | 
  **descUnits** | **optional.String**|  | 
  **outerWidth** | **optional.String**|  | 
  **outerDepth** | **optional.String**|  | 
  **outerUnit** | **optional.String**|  | 
- **tenantGroupId** | **optional.String**|  | 
- **tenantGroup** | **optional.String**|  | 
- **tenantId** | **optional.String**|  | 
- **tenant** | **optional.String**|  | 
  **created** | **optional.String**|  | 
  **createdGte** | **optional.String**|  | 
  **createdLte** | **optional.String**|  | 
  **lastUpdated** | **optional.String**|  | 
  **lastUpdatedGte** | **optional.String**|  | 
  **lastUpdatedLte** | **optional.String**|  | 
+ **tenantGroupId** | **optional.String**|  | 
+ **tenantGroup** | **optional.String**|  | 
+ **tenantId** | **optional.String**|  | 
+ **tenant** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **regionId** | **optional.String**|  | 
  **region** | **optional.String**|  | 
+ **siteGroupId** | **optional.String**|  | 
+ **siteGroup** | **optional.String**|  | 
  **siteId** | **optional.String**|  | 
  **site** | **optional.String**|  | 
- **groupId** | **optional.String**|  | 
- **group** | **optional.String**|  | 
+ **locationId** | **optional.String**|  | 
+ **location** | **optional.String**|  | 
  **status** | **optional.String**|  | 
+ **type_** | **optional.String**|  | 
+ **width** | **optional.String**|  | 
  **roleId** | **optional.String**|  | 
  **role** | **optional.String**|  | 
  **serial** | **optional.String**|  | 
@@ -6552,8 +9071,6 @@ Name | Type | Description  | Notes
  **assetTagNisw** | **optional.String**|  | 
  **assetTagIe** | **optional.String**|  | 
  **assetTagNie** | **optional.String**|  | 
- **typeN** | **optional.String**|  | 
- **widthN** | **optional.String**|  | 
  **uHeightN** | **optional.String**|  | 
  **uHeightLte** | **optional.String**|  | 
  **uHeightLt** | **optional.String**|  | 
@@ -6576,11 +9093,15 @@ Name | Type | Description  | Notes
  **tenantN** | **optional.String**|  | 
  **regionIdN** | **optional.String**|  | 
  **regionN** | **optional.String**|  | 
+ **siteGroupIdN** | **optional.String**|  | 
+ **siteGroupN** | **optional.String**|  | 
  **siteIdN** | **optional.String**|  | 
  **siteN** | **optional.String**|  | 
- **groupIdN** | **optional.String**|  | 
- **groupN** | **optional.String**|  | 
+ **locationIdN** | **optional.String**|  | 
+ **locationN** | **optional.String**|  | 
  **statusN** | **optional.String**|  | 
+ **typeN** | **optional.String**|  | 
+ **widthN** | **optional.String**|  | 
  **roleIdN** | **optional.String**|  | 
  **roleN** | **optional.String**|  | 
  **tagN** | **optional.String**|  | 
@@ -6589,7 +9110,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20031**](inline_response_200_31.md)
+[**InlineResponse20032**](inline_response_200_32.md)
 
 ### Authorization
 
@@ -6635,7 +9156,7 @@ Name | Type | Description  | Notes
 > Rack DcimRacksRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -6676,6 +9197,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Rack**](Rack.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimRearPortTemplatesBulkDelete**
+> DcimRearPortTemplatesBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimRearPortTemplatesBulkPartialUpdate**
+> RearPortTemplate DcimRearPortTemplatesBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableRearPortTemplate**](WritableRearPortTemplate.md)|  | 
+
+### Return type
+
+[**RearPortTemplate**](RearPortTemplate.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimRearPortTemplatesBulkUpdate**
+> RearPortTemplate DcimRearPortTemplatesBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableRearPortTemplate**](WritableRearPortTemplate.md)|  | 
+
+### Return type
+
+[**RearPortTemplate**](RearPortTemplate.md)
 
 ### Authorization
 
@@ -6745,10 +9346,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimRearPortTemplatesList**
-> InlineResponse20032 DcimRearPortTemplatesList(ctx, optional)
+> InlineResponse20033 DcimRearPortTemplatesList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -6766,7 +9367,12 @@ Name | Type | Description  | Notes
  **name** | **optional.String**|  | 
  **type_** | **optional.String**|  | 
  **positions** | **optional.String**|  | 
- **q** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **devicetypeId** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
@@ -6794,7 +9400,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20032**](inline_response_200_32.md)
+[**InlineResponse20033**](inline_response_200_33.md)
 
 ### Authorization
 
@@ -6840,7 +9446,7 @@ Name | Type | Description  | Notes
 > RearPortTemplate DcimRearPortTemplatesRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -6881,6 +9487,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**RearPortTemplate**](RearPortTemplate.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimRearPortsBulkDelete**
+> DcimRearPortsBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimRearPortsBulkPartialUpdate**
+> RearPort DcimRearPortsBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableRearPort**](WritableRearPort.md)|  | 
+
+### Return type
+
+[**RearPort**](RearPort.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimRearPortsBulkUpdate**
+> RearPort DcimRearPortsBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableRearPort**](WritableRearPort.md)|  | 
+
+### Return type
+
+[**RearPort**](RearPort.md)
 
 ### Authorization
 
@@ -6950,10 +9636,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimRearPortsList**
-> InlineResponse20033 DcimRearPortsList(ctx, optional)
+> InlineResponse20034 DcimRearPortsList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -6969,12 +9655,21 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **optional.String**|  | 
  **name** | **optional.String**|  | 
+ **label** | **optional.String**|  | 
  **type_** | **optional.String**|  | 
  **positions** | **optional.String**|  | 
  **description** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **regionId** | **optional.String**|  | 
  **region** | **optional.String**|  | 
+ **siteGroupId** | **optional.String**|  | 
+ **siteGroup** | **optional.String**|  | 
  **siteId** | **optional.String**|  | 
  **site** | **optional.String**|  | 
  **deviceId** | **optional.String**|  | 
@@ -6995,6 +9690,15 @@ Name | Type | Description  | Notes
  **nameNisw** | **optional.String**|  | 
  **nameIe** | **optional.String**|  | 
  **nameNie** | **optional.String**|  | 
+ **labelN** | **optional.String**|  | 
+ **labelIc** | **optional.String**|  | 
+ **labelNic** | **optional.String**|  | 
+ **labelIew** | **optional.String**|  | 
+ **labelNiew** | **optional.String**|  | 
+ **labelIsw** | **optional.String**|  | 
+ **labelNisw** | **optional.String**|  | 
+ **labelIe** | **optional.String**|  | 
+ **labelNie** | **optional.String**|  | 
  **typeN** | **optional.String**|  | 
  **positionsN** | **optional.String**|  | 
  **positionsLte** | **optional.String**|  | 
@@ -7012,6 +9716,8 @@ Name | Type | Description  | Notes
  **descriptionNie** | **optional.String**|  | 
  **regionIdN** | **optional.String**|  | 
  **regionN** | **optional.String**|  | 
+ **siteGroupIdN** | **optional.String**|  | 
+ **siteGroupN** | **optional.String**|  | 
  **siteIdN** | **optional.String**|  | 
  **siteN** | **optional.String**|  | 
  **deviceIdN** | **optional.String**|  | 
@@ -7022,7 +9728,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20033**](inline_response_200_33.md)
+[**InlineResponse20034**](inline_response_200_34.md)
 
 ### Authorization
 
@@ -7064,11 +9770,39 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **DcimRearPortsPaths**
+> RearPort DcimRearPortsPaths(ctx, id)
+
+
+Return all CablePaths which traverse a given pass-through port.
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **id** | **int32**| A unique integer value identifying this rear port. | 
+
+### Return type
+
+[**RearPort**](RearPort.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **DcimRearPortsRead**
 > RearPort DcimRearPortsRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -7109,6 +9843,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**RearPort**](RearPort.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimRegionsBulkDelete**
+> DcimRegionsBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimRegionsBulkPartialUpdate**
+> Region DcimRegionsBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableRegion**](WritableRegion.md)|  | 
+
+### Return type
+
+[**Region**](Region.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimRegionsBulkUpdate**
+> Region DcimRegionsBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableRegion**](WritableRegion.md)|  | 
+
+### Return type
+
+[**Region**](Region.md)
 
 ### Authorization
 
@@ -7178,10 +9992,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimRegionsList**
-> InlineResponse20034 DcimRegionsList(ctx, optional)
+> InlineResponse20035 DcimRegionsList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -7199,6 +10013,12 @@ Name | Type | Description  | Notes
  **name** | **optional.String**|  | 
  **slug** | **optional.String**|  | 
  **description** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **parentId** | **optional.String**|  | 
  **parent** | **optional.String**|  | 
@@ -7241,7 +10061,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20034**](inline_response_200_34.md)
+[**InlineResponse20035**](inline_response_200_35.md)
 
 ### Authorization
 
@@ -7287,7 +10107,7 @@ Name | Type | Description  | Notes
 > Region DcimRegionsRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -7328,6 +10148,391 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Region**](Region.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimSiteGroupsBulkDelete**
+> DcimSiteGroupsBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimSiteGroupsBulkPartialUpdate**
+> SiteGroup DcimSiteGroupsBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableSiteGroup**](WritableSiteGroup.md)|  | 
+
+### Return type
+
+[**SiteGroup**](SiteGroup.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimSiteGroupsBulkUpdate**
+> SiteGroup DcimSiteGroupsBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableSiteGroup**](WritableSiteGroup.md)|  | 
+
+### Return type
+
+[**SiteGroup**](SiteGroup.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimSiteGroupsCreate**
+> SiteGroup DcimSiteGroupsCreate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableSiteGroup**](WritableSiteGroup.md)|  | 
+
+### Return type
+
+[**SiteGroup**](SiteGroup.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimSiteGroupsDelete**
+> DcimSiteGroupsDelete(ctx, id)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **id** | **int32**| A unique integer value identifying this site group. | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimSiteGroupsList**
+> InlineResponse20036 DcimSiteGroupsList(ctx, optional)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+ **optional** | ***DcimApiDcimSiteGroupsListOpts** | optional parameters | nil if no parameters
+
+### Optional Parameters
+Optional parameters are passed through a pointer to a DcimApiDcimSiteGroupsListOpts struct
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **optional.String**|  | 
+ **name** | **optional.String**|  | 
+ **slug** | **optional.String**|  | 
+ **description** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
+ **q** | **optional.String**|  | 
+ **parentId** | **optional.String**|  | 
+ **parent** | **optional.String**|  | 
+ **idN** | **optional.String**|  | 
+ **idLte** | **optional.String**|  | 
+ **idLt** | **optional.String**|  | 
+ **idGte** | **optional.String**|  | 
+ **idGt** | **optional.String**|  | 
+ **nameN** | **optional.String**|  | 
+ **nameIc** | **optional.String**|  | 
+ **nameNic** | **optional.String**|  | 
+ **nameIew** | **optional.String**|  | 
+ **nameNiew** | **optional.String**|  | 
+ **nameIsw** | **optional.String**|  | 
+ **nameNisw** | **optional.String**|  | 
+ **nameIe** | **optional.String**|  | 
+ **nameNie** | **optional.String**|  | 
+ **slugN** | **optional.String**|  | 
+ **slugIc** | **optional.String**|  | 
+ **slugNic** | **optional.String**|  | 
+ **slugIew** | **optional.String**|  | 
+ **slugNiew** | **optional.String**|  | 
+ **slugIsw** | **optional.String**|  | 
+ **slugNisw** | **optional.String**|  | 
+ **slugIe** | **optional.String**|  | 
+ **slugNie** | **optional.String**|  | 
+ **descriptionN** | **optional.String**|  | 
+ **descriptionIc** | **optional.String**|  | 
+ **descriptionNic** | **optional.String**|  | 
+ **descriptionIew** | **optional.String**|  | 
+ **descriptionNiew** | **optional.String**|  | 
+ **descriptionIsw** | **optional.String**|  | 
+ **descriptionNisw** | **optional.String**|  | 
+ **descriptionIe** | **optional.String**|  | 
+ **descriptionNie** | **optional.String**|  | 
+ **parentIdN** | **optional.String**|  | 
+ **parentN** | **optional.String**|  | 
+ **limit** | **optional.Int32**| Number of results to return per page. | 
+ **offset** | **optional.Int32**| The initial index from which to return the results. | 
+
+### Return type
+
+[**InlineResponse20036**](inline_response_200_36.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimSiteGroupsPartialUpdate**
+> SiteGroup DcimSiteGroupsPartialUpdate(ctx, id, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **id** | **int32**| A unique integer value identifying this site group. | 
+  **data** | [**WritableSiteGroup**](WritableSiteGroup.md)|  | 
+
+### Return type
+
+[**SiteGroup**](SiteGroup.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimSiteGroupsRead**
+> SiteGroup DcimSiteGroupsRead(ctx, id)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **id** | **int32**| A unique integer value identifying this site group. | 
+
+### Return type
+
+[**SiteGroup**](SiteGroup.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimSiteGroupsUpdate**
+> SiteGroup DcimSiteGroupsUpdate(ctx, id, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **id** | **int32**| A unique integer value identifying this site group. | 
+  **data** | [**WritableSiteGroup**](WritableSiteGroup.md)|  | 
+
+### Return type
+
+[**SiteGroup**](SiteGroup.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimSitesBulkDelete**
+> DcimSitesBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimSitesBulkPartialUpdate**
+> Site DcimSitesBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableSite**](WritableSite.md)|  | 
+
+### Return type
+
+[**Site**](Site.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimSitesBulkUpdate**
+> Site DcimSitesBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableSite**](WritableSite.md)|  | 
+
+### Return type
+
+[**Site**](Site.md)
 
 ### Authorization
 
@@ -7396,39 +10601,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DcimSitesGraphs**
-> Site DcimSitesGraphs(ctx, id)
-
-
-A convenience method for rendering graphs for a particular site.
-
-### Required Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **id** | **int32**| A unique integer value identifying this site. | 
-
-### Return type
-
-[**Site**](Site.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **DcimSitesList**
-> InlineResponse20035 DcimSitesList(ctx, optional)
+> InlineResponse20037 DcimSitesList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -7452,20 +10629,22 @@ Name | Type | Description  | Notes
  **contactName** | **optional.String**|  | 
  **contactPhone** | **optional.String**|  | 
  **contactEmail** | **optional.String**|  | 
- **tenantGroupId** | **optional.String**|  | 
- **tenantGroup** | **optional.String**|  | 
- **tenantId** | **optional.String**|  | 
- **tenant** | **optional.String**|  | 
  **created** | **optional.String**|  | 
  **createdGte** | **optional.String**|  | 
  **createdLte** | **optional.String**|  | 
  **lastUpdated** | **optional.String**|  | 
  **lastUpdatedGte** | **optional.String**|  | 
  **lastUpdatedLte** | **optional.String**|  | 
+ **tenantGroupId** | **optional.String**|  | 
+ **tenantGroup** | **optional.String**|  | 
+ **tenantId** | **optional.String**|  | 
+ **tenant** | **optional.String**|  | 
  **q** | **optional.String**|  | 
  **status** | **optional.String**|  | 
  **regionId** | **optional.String**|  | 
  **region** | **optional.String**|  | 
+ **groupId** | **optional.String**|  | 
+ **group** | **optional.String**|  | 
  **tag** | **optional.String**|  | 
  **idN** | **optional.String**|  | 
  **idLte** | **optional.String**|  | 
@@ -7548,13 +10727,15 @@ Name | Type | Description  | Notes
  **statusN** | **optional.String**|  | 
  **regionIdN** | **optional.String**|  | 
  **regionN** | **optional.String**|  | 
+ **groupIdN** | **optional.String**|  | 
+ **groupN** | **optional.String**|  | 
  **tagN** | **optional.String**|  | 
  **limit** | **optional.Int32**| Number of results to return per page. | 
  **offset** | **optional.Int32**| The initial index from which to return the results. | 
 
 ### Return type
 
-[**InlineResponse20035**](inline_response_200_35.md)
+[**InlineResponse20037**](inline_response_200_37.md)
 
 ### Authorization
 
@@ -7600,7 +10781,7 @@ Name | Type | Description  | Notes
 > Site DcimSitesRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -7641,6 +10822,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Site**](Site.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimVirtualChassisBulkDelete**
+> DcimVirtualChassisBulkDelete(ctx, )
+
+
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimVirtualChassisBulkPartialUpdate**
+> VirtualChassis DcimVirtualChassisBulkPartialUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableVirtualChassis**](WritableVirtualChassis.md)|  | 
+
+### Return type
+
+[**VirtualChassis**](VirtualChassis.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DcimVirtualChassisBulkUpdate**
+> VirtualChassis DcimVirtualChassisBulkUpdate(ctx, data)
+
+
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**WritableVirtualChassis**](WritableVirtualChassis.md)|  | 
+
+### Return type
+
+[**VirtualChassis**](VirtualChassis.md)
 
 ### Authorization
 
@@ -7710,10 +10971,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **DcimVirtualChassisList**
-> InlineResponse20036 DcimVirtualChassisList(ctx, optional)
+> InlineResponse20038 DcimVirtualChassisList(ctx, optional)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
@@ -7729,9 +10990,20 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **optional.String**|  | 
  **domain** | **optional.String**|  | 
+ **name** | **optional.String**|  | 
+ **created** | **optional.String**|  | 
+ **createdGte** | **optional.String**|  | 
+ **createdLte** | **optional.String**|  | 
+ **lastUpdated** | **optional.String**|  | 
+ **lastUpdatedGte** | **optional.String**|  | 
+ **lastUpdatedLte** | **optional.String**|  | 
  **q** | **optional.String**|  | 
+ **masterId** | **optional.String**|  | 
+ **master** | **optional.String**|  | 
  **regionId** | **optional.String**|  | 
  **region** | **optional.String**|  | 
+ **siteGroupId** | **optional.String**|  | 
+ **siteGroup** | **optional.String**|  | 
  **siteId** | **optional.String**|  | 
  **site** | **optional.String**|  | 
  **tenantId** | **optional.String**|  | 
@@ -7751,8 +11023,21 @@ Name | Type | Description  | Notes
  **domainNisw** | **optional.String**|  | 
  **domainIe** | **optional.String**|  | 
  **domainNie** | **optional.String**|  | 
+ **nameN** | **optional.String**|  | 
+ **nameIc** | **optional.String**|  | 
+ **nameNic** | **optional.String**|  | 
+ **nameIew** | **optional.String**|  | 
+ **nameNiew** | **optional.String**|  | 
+ **nameIsw** | **optional.String**|  | 
+ **nameNisw** | **optional.String**|  | 
+ **nameIe** | **optional.String**|  | 
+ **nameNie** | **optional.String**|  | 
+ **masterIdN** | **optional.String**|  | 
+ **masterN** | **optional.String**|  | 
  **regionIdN** | **optional.String**|  | 
  **regionN** | **optional.String**|  | 
+ **siteGroupIdN** | **optional.String**|  | 
+ **siteGroupN** | **optional.String**|  | 
  **siteIdN** | **optional.String**|  | 
  **siteN** | **optional.String**|  | 
  **tenantIdN** | **optional.String**|  | 
@@ -7763,7 +11048,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20036**](inline_response_200_36.md)
+[**InlineResponse20038**](inline_response_200_38.md)
 
 ### Authorization
 
@@ -7809,7 +11094,7 @@ Name | Type | Description  | Notes
 > VirtualChassis DcimVirtualChassisRead(ctx, id)
 
 
-Call to super to allow for caching
+
 
 ### Required Parameters
 
