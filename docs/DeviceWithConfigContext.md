@@ -32,7 +32,7 @@ Name | Type | Description | Notes
 **LocalContextData** | **string** |  | [optional] [default to null]
 **Tags** | [**[]NestedTag**](NestedTag.md) |  | [optional] [default to null]
 **CustomFields** | [***interface{}**](interface{}.md) |  | [optional] [default to null]
-**ConfigContext** | **map[string]string** |  | [optional] [default to null]
+**ConfigContext** | [**map[string]interface{}**](interface{}.md) |  | [optional] [default to null]
 **Created** | **string** |  | [optional] [default to null]
 **LastUpdated** | [**time.Time**](time.Time.md) |  | [optional] [default to null]
 

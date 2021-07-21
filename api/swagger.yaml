@@ -40636,7 +40636,6 @@ definitions:
         title: "Config context"
         readOnly: true
         additionalProperties:
-          type: "string"
           x-nullable: true
       created:
         type: "string"
@@ -40656,7 +40655,7 @@ definitions:
         id: 9
         url: "http://example.com/aeiou"
       config_context:
-        key: "config_context"
+        key: ""
       primary_ip:
         address: "address"
         display: "display"
@@ -40926,7 +40925,6 @@ definitions:
         title: "Config context"
         readOnly: true
         additionalProperties:
-          type: "string"
           x-nullable: true
       created:
         type: "string"
@@ -40941,7 +40939,7 @@ definitions:
     example:
       cluster: 7
       config_context:
-        key: "config_context"
+        key: ""
       primary_ip: "primary_ip"
       vc_priority: 37
       device_type: 6
@@ -49982,7 +49980,7 @@ definitions:
         type: "integer"
         title: "Scope id"
         minimum: 0
-        maximum: 9223372036854775807
+        maximum: 9223372036854776000
         x-nullable: true
       scope:
         type: "string"
@@ -53950,7 +53948,7 @@ definitions:
           id: 9
           url: "http://example.com/aeiou"
         config_context:
-          key: "config_context"
+          key: ""
         primary_ip:
           address: "address"
           display: "display"
@@ -54085,7 +54083,7 @@ definitions:
           id: 9
           url: "http://example.com/aeiou"
         config_context:
-          key: "config_context"
+          key: ""
         primary_ip:
           address: "address"
           display: "display"
