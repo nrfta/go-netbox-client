@@ -20,6 +20,7 @@ jobs:
           java-version: '13' 
           java-package: jdk 
           architecture: x64 
+      - run: sudo apt-get install -y jq 
       - name: generate code
         env:
           GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -30,6 +31,11 @@ jobs:
 
           wget https://repo1.maven.org/maven2/io/swagger/swagger-codegen-cli/2.4.14/swagger-codegen-cli-2.4.14.jar \
             -O swagger-codegen-cli.jar
+
+          # some edits to the API spec
+          cat $GITHUB_WORKSPACE/codegen/netbox_swagger.json | jq 'del(.definitions.DeviceWithConfigContext.properties.config_context.additionalProperties.type)' > netbox_swagger_update.json
+          cat netbox_swagger_update.json | jq 'del(.definitions.WritableDeviceWithConfigContext.properties.config_context.additionalProperties.type)' > $GITHUB_WORKSPACE/codegen/netbox_swagger.json
+
           java -jar swagger-codegen-cli.jar generate \
             -l go --git-user-id nrfta --git-repo-id go-netbox-client \
             -c $GITHUB_WORKSPACE/codegen/config.json \
